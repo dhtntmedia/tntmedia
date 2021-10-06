@@ -16,7 +16,7 @@ body {
     width: calc(100% + 300px);
     height: calc(100% + 150px);
     margin-left: -150px;
-    margin-top: -75px;
+    margin-top: -55px;
 }
 
 .bg-layer-two {
@@ -187,7 +187,7 @@ body {
     line-height: 120px;
 }
 .comingsoon-four {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 100;
     background-image: url("../images/text-glow.jpg");
     background-position-x: 50%;
@@ -206,5 +206,6 @@ body {
     color: rgba(250,240,220,1) !important;
 }
 #qr-code {
-    margin-bottom: 30px
+    margin-bottom: 80px;
+    padding-bottom: 80px;
 }
