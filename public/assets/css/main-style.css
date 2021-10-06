@@ -1,0 +1,210 @@
+body {
+    text-align: center;
+    width: 100%;
+    z-index:0;
+    height:100%;
+}
+
+/*New style*/
+
+.bg-layer-one {
+    background: url("../images/background/background.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: calc(100% + 300px);
+    height: calc(100% + 150px);
+    margin-left: -150px;
+    margin-top: -75px;
+}
+
+.bg-layer-two {
+    background: url("../images/background/background-stars.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: calc(100% + 300px);
+    height: calc(100% + 150px);
+    margin-left: -150px;
+    margin-top: -75px;
+}
+
+.bg-layer-three {
+    background: url("../images/background/background-moon.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: calc(100% + 150px);
+    margin-top: -75px;
+}
+
+/*New style end*/
+
+.background {
+    background: url("./assets/images/coming-soon-bg-2.jpg") no-repeat #000 !important;
+    background-size: calc(100% + 400px);
+    width: calc(100% + 200px);
+    background-position: 100%;
+}
+.lighthouse {
+    background: url("./assets/images/coming-soon-moon.png") -25px -50px no-repeat;
+    height: 100%;
+    width: 100%;
+    top:0;
+
+}
+#moon {
+    background: url("./assets/images/coming-soon-moon.png") no-repeat;
+    height: calc(100% + 50px);
+    width: 100%;
+    margin-top: -100px;
+    text-align: center;
+    z-index: 0;
+    background-size: 100%;
+}
+#moon-glow {
+    background: url("../images/coming-soon-moon-2-glow.png") top center no-repeat;
+    height: calc(100% + 50px);
+    width: 100%;
+    margin-top: -100px;
+    text-align: center;
+    z-index: 0;
+    background-size: calc(100% + 200px);
+}
+#coming-soon-dust {
+    text-align: center;
+    background: url("../images/coming-soon-dust.png") top center no-repeat;
+    height: calc(100% + 50px);
+    background-size: calc(100% + 200px);
+    width: 100%;
+    z-index: 0;
+}
+#content {
+    text-align: center;
+    background: url("./assets/images/coming-soon-moon.png") no-repeat;
+    width: 100%;
+    z-index: 0;
+    height: 100%;
+    background-size: calc(100% + 50px);
+    padding-top: 20px;
+}
+#logo {
+   margin-top: 30px !important;
+   margin-bottom: 40px !important;
+}
+@font-face {
+    font-family: vonReg;
+    src: url("../fonts/vonique-64-font/Vonique64-JKgM.ttf");
+}
+.phase-1 {
+    left: 90% !important;
+    top: 60% !important;
+    background: url("../images/white-star-small.png") no-repeat center !important;
+}
+.phase-2 {
+    left: 24% !important;
+    top: 90% !important;
+    background: url("../images/white-star-small.png") no-repeat center !important;
+}
+.phase-4 {
+    left: 10% !important;
+    top: 40% !important;
+    background: url("../images/white-star.png") no-repeat center !important;
+}
+.phase-5 {
+    left: 90% !important;
+    top: 20% !important;
+    background: url("../images/blue-star.png") no-repeat center !important;
+}
+.phase-6 {
+    left: 40% !important;
+    top: 10% !important;
+}
+.phase-3 {
+    left: 80% !important;
+    top: 80% !important;
+    background: url("../images/yellow-star.png") no-repeat center !important;
+}
+
+.phase-7 {
+    left: 30% !important;
+    top: 10% !important;
+    background: url("../images/white-star-small.png") no-repeat center !important;
+}
+.phase-8 {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: calc(100% + 300px);
+    height: calc(100% + 150px);
+    margin-left: -150px;
+    margin-top: -75px;
+}
+.comingsoon-one {
+    font-size: 72px !important;
+    /*color: #bea671;*/
+    background: url("../images/text-glow.jpg");
+    z-index:0;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: 250px;
+    font-weight: 100;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: vonReg;
+    padding: 0px;
+    margin: 0px;
+    line-height: 72px;
+}
+.comingsoon-two {
+    font-size: 120px !important;
+    text-shadow: none;
+    /*background: rgb(250,240,220);*/
+    /*background: radial-gradient(circle, rgba(250,240,220,1) 0%, rgba(190,166,113,1) 50%, rgba(121,102,59,1) 100%);*/
+    background-image: url("../images/text-glow.jpg");
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: 250px;
+    font-weight: 100;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: vonReg;
+    padding: 0px;
+    margin: 0px 0px 0px;
+    line-height: 120px;
+}
+.comingsoon-three {
+    font-size: 120px !important;
+    font-weight: 100;
+    font-family: vonReg;
+    padding: 0px;
+    margin: 0px 0px 0px;
+    line-height: 120px;
+}
+.comingsoon-four {
+    font-size: 16px;
+    font-weight: 100;
+    background-image: url("../images/text-glow.jpg");
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: 150px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: vonReg;
+    padding: 0px;
+    margin: 0px 0px 20px;
+}
+.white {
+    color: #fff !important;
+}
+.gold {
+    color: rgba(250,240,220,1) !important;
+}
+#qr-code {
+    margin-bottom: 30px
+}
