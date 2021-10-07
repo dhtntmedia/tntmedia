@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/main-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/main-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/logo-gold.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/logo-gold.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/images/logo-silver.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/logo-silver.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="GitIgnore" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -74,7 +76,7 @@
       <workItem from="1633425921053" duration="1593000" />
       <workItem from="1633430962388" duration="9207000" />
       <workItem from="1633458508371" duration="7794000" />
-      <workItem from="1633512680814" duration="12024000" />
+      <workItem from="1633512680814" duration="13303000" />
     </task>
     <servers />
   </component>
