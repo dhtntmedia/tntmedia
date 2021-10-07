@@ -206,6 +206,10 @@ body {
     color: rgba(250,240,220,1) !important;
 }
 #qr-code {
+    margin-top: 20px;
     margin-bottom: 80px;
     padding-bottom: 80px;
+}
+.layer a:hover {
+    cursor: pointer;
 }
