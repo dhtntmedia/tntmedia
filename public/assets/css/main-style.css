@@ -127,9 +127,11 @@ body {
     background: url("../images/white-star.png") no-repeat center !important;
 }
 .phase-5 {
-    left: 90% !important;
-    top: 20% !important;
-    background: url("../images/blue-star.png") no-repeat center !important;
+    left: calc(50% - 450px) !important;
+    top: calc(50% - 290px) !important;
+    background: url("../images/background-cartoon/moon-2-glow.png") no-repeat center !important;
+    width: 100%;
+    height: calc(100% + 300px);
 }
 .phase-6 {
     left: 40% !important;
