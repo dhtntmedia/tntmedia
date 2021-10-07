@@ -213,3 +213,6 @@ body {
 .layer a:hover {
     cursor: pointer;
 }
+#logo {
+    color: #000;
+}
