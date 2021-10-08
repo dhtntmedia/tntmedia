@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Dosis:600|Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Dosis:600|Roboto+Slab:100,300,400,700");
 article,
 aside,
 details,
@@ -842,15 +842,15 @@ footer .twitter-share-button {
     top: -4px;
     left: 0; }
 .board.birds {
-    background-image: url(../../images/board-birds.png); }
+    background-image: url(https://matthew.wagerfield.com/parallax/assets/images/board-birds.png); }
 .board.cloud-1 {
-    background-image: url(../../images/board-cloud-1.png); }
+    background-image: url(https://matthew.wagerfield.com/parallax/assets/images/board-cloud-1.png); }
 .board.cloud-2 {
-    background-image: url(../../images/board-cloud-2.png); }
+    background-image: url(https://matthew.wagerfield.com/parallax/assets/images/board-cloud-2.png); }
 .board.cloud-3 {
-    background-image: url(../../images/board-cloud-3.png); }
+    background-image: url(https://matthew.wagerfield.com/parallax/assets/images/board-cloud-3.png); }
 .board.cloud-4 {
-    background-image: url(../../images/board-cloud-4.png); }
+    background-image: url(https://matthew.wagerfield.com/parallax/assets/images/board-cloud-4.png); }
 
 .swing-1 {
     -webkit-animation: swing 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -2142,17 +2142,17 @@ html.touch .links a.tap {
     height: 105px;
     width: 70px; }
 #awwwards.left.black a {
-    background-image: url(http://matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_black_left.png); }
+    background-image: url(https://matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_black_left.png); }
 #awwwards.right.black a {
-    background-image: url(http://matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_black_right.png); }
+    background-image: url(https://matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_black_right.png); }
 #awwwards.left.white a {
-    background-image: url(http://matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_white_left.png); }
+    background-image: url(https://matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_white_left.png); }
 #awwwards.right.white a {
-    background-image: url(http://matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_white_right.png); }
+    background-image: url(https://matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_white_right.png); }
 #awwwards.left.green a {
-    background-image: url(http://matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_green_left.png); }
+    background-image: url(https://matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_green_left.png); }
 #awwwards.right.green a {
-    background-image: url(http://matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_green_right.png); }
+    background-image: url(https://matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_green_right.png); }
 
 @media (max-width: 767px) {
     #awwwards {
@@ -2165,14 +2165,14 @@ html.touch .links a.tap {
         -o-background-size: 70px 105px;
         background-size: 70px 105px; }
     #awwwards a.left.black a {
-        background-image: url(http://matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_black_left2x.png); }
+        background-image: url(https://matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_black_left2x.png); }
     #awwwards a.right.black a {
-        background-image: url(http://matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_black_right2x.png); }
+        background-image: url(https://matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_black_right2x.png); }
     #awwwards a.left.white a {
-        background-image: url(http://matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_white_left2x.png); }
+        background-image: url(https://matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_white_left2x.png); }
     #awwwards a.right.white a {
-        background-image: url(http://matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_white_right2x.png); }
+        background-image: url(https://matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_white_right2x.png); }
     #awwwards a.left.green a {
-        background-image: url(http://matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_green_left2x.png); }
+        background-image: url(https://matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_green_left2x.png); }
     #awwwards a.right.green a {
-        background-image: url(http://matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_green_right2x.png); } }
+        background-image: url(https://matthew.wagerfield.com/parallax/assets/graphics/awwwards_sotd_green_right2x.png); } }
