@@ -194,8 +194,8 @@ table {
 
 @font-face {
     font-family: "icons";
-    src: url("../../fonts/icons/icons.eot");
-    src: url("../../fonts/icons/icons.eot?#iefix") format("embedded-opentype"), url("../../fonts/icons/icons.woff") format("woff"), url("../../fonts/icons/icons.ttf") format("truetype"), url("../../fonts/icons/icons.svg#icons") format("svg");
+    src: url("https://matthew.wagerfield.com/parallax/assets/fonts/icons/icons.eot");
+    src: url("https://matthew.wagerfield.com/parallax/assets/fonts/icons/icons.eot?#iefix") format("embedded-opentype"), url("https://matthew.wagerfield.com/parallax/assets/fonts/icons/icons.woff") format("woff"), url("https://matthew.wagerfield.com/parallax/assets/fonts/icons/icons.ttf") format("truetype"), url("https://matthew.wagerfield.com/parallax/assets/fonts/icons/icons.svg#icons") format("svg");
     font-weight: normal;
     font-style: normal; }
 ::selection {
@@ -385,7 +385,7 @@ footer .twitter-share-button {
     transform-origin: 50% -100%; }
 .about .cables:before {
     left: 10%;
-    background: transparent url(../../images/cable.png) 0 0 no-repeat;
+    background: transparent url(https://matthew.wagerfield.com/parallax/assets/images/cable.png) 0 0 no-repeat;
     position: absolute;
     display: block;
     height: 860px;
@@ -395,7 +395,7 @@ footer .twitter-share-button {
     z-index: 1; }
 .about .cables:after {
     right: 10%;
-    background: transparent url(../../images/cable.png) 0 0 no-repeat;
+    background: transparent url(https://matthew.wagerfield.com/parallax/assets/images/cable.png) 0 0 no-repeat;
     position: absolute;
     display: block;
     height: 860px;
@@ -407,7 +407,7 @@ footer .twitter-share-button {
     -webkit-transform-origin: 50% 0%;
     -moz-transform-origin: 50% 0%;
     transform-origin: 50% 0%;
-    background: #F2F2F2 url(../../images/panel.jpg) -7px 0;
+    background: #F2F2F2 url(https://matthew.wagerfield.com/parallax/assets/images/panel.jpg) -7px 0;
     background-size: 399px 357px; }
 .about .panel:before {
     border-left: 1px dashed rgba(29, 31, 39, 0.2);
@@ -424,7 +424,7 @@ footer .twitter-share-button {
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding-box;
     background-clip: padding-box;
-    background: transparent url(../../images/compass.png) 0 0 no-repeat;
+    background: transparent url(https://matthew.wagerfield.com/parallax/assets/images/compass.png) 0 0 no-repeat;
     background-size: 224px 224px;
     position: absolute;
     display: block;
@@ -443,7 +443,7 @@ footer .twitter-share-button {
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding-box;
     background-clip: padding-box;
-    background: transparent url(../../images/map.png) 0 0 no-repeat;
+    background: transparent url(https://matthew.wagerfield.com/parallax/assets/images/map.png) 0 0 no-repeat;
     background-size: 60.5px 82.5px;
     position: absolute;
     display: block;
@@ -681,7 +681,7 @@ footer .twitter-share-button {
     top: 42%; }
 
 .background {
-    background: url(../../images/background.jpg) no-repeat 50% 100%;
+    background: url(https://matthew.wagerfield.com/parallax/assets/images/background.jpg) no-repeat 50% 100%;
     bottom: 96px;
     background-size: cover;
     position: absolute;
@@ -700,7 +700,7 @@ footer .twitter-share-button {
     background-size: 128px 224px;
     height: 224px;
     width: 128px;
-    background-image: url(../../images/lighthouse.png);
+    background-image: url(https://matthew.wagerfield.com/parallax/assets/images/lighthouse.png);
     background-repeat: no-repeat;
     bottom: 64px;
     position: absolute;
@@ -721,9 +721,9 @@ footer .twitter-share-button {
     top: 100%;
     left: 0; }
 .wave.plain {
-    background-image: url(../../images/wave-plain.png); }
+    background-image: url(https://matthew.wagerfield.com/parallax/assets/images/wave-plain.png); }
 .wave.paint {
-    background-image: url(../../images/wave-paint.png); }
+    background-image: url(https://matthew.wagerfield.com/parallax/assets/images/wave-paint.png); }
 
 .light {
     margin: -120px -120px;
@@ -735,9 +735,9 @@ footer .twitter-share-button {
     position: absolute;
     left: 50%; }
 .light.orange {
-    background-image: url(../../images/light-orange.png); }
+    background-image: url(https://matthew.wagerfield.com/parallax/assets/images/light-orange.png); }
 .light.purple {
-    background-image: url(../../images/light-purple.png); }
+    background-image: url(https://matthew.wagerfield.com/parallax/assets/images/light-purple.png); }
 .light.a {
     bottom: 80px;
     left: 20%; }
