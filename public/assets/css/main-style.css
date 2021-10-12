@@ -212,6 +212,14 @@ body {
     padding: 0px;
     margin: 0px 0px 20px;
 }
+
+.titlebar {
+    background-image: url("../images/text-glow.jpg") !important;
+    background-position-x: 50% !important;
+    background-position-y: 50% !important;
+    background-size: 300px !important;
+}
+
 .white {
     color: #fff !important;
 }
