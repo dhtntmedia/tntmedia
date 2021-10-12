@@ -68,6 +68,24 @@
         });
     </script>
 
+    <!--Start of HappyFox Live Chat Script-->
+    <script>
+        window.HFCHAT_CONFIG = {
+            EMBED_TOKEN: 'a1b80c70-2b7e-11ec-9f35-a77ac79b9fa6',
+            ASSETS_URL: 'https://widget.happyfoxchat.com/v2/visitor'
+        };
+        (function () {
+            var scriptTag = document.createElement('script')
+            scriptTag.type = 'text/javascript'
+            scriptTag.async = true
+            scriptTag.src = window.HFCHAT_CONFIG.ASSETS_URL + '/js/widget-loader.js'
+
+            var s = document.getElementsByTagName('script')[0]
+            s.parentNode.insertBefore(scriptTag, s)
+        })()
+    </script>
+    <!--End of HappyFox Live Chat Script-->
+
 </head>
 <body>
 
