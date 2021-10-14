@@ -8,7 +8,7 @@ body {
 /*New style*/
 
 .bg-layer-one {
-    background: url("../images/background-cartoon/stars-3.jpg") no-repeat center center;
+    background: url("../images/background-cartoon/stars.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -134,8 +134,8 @@ body {
     height: calc(100% + 300px);
 }
 .phase-6 {
-    left: 40% !important;
-    top: 10% !important;
+    left: 50% !important;
+    top: 50% !important;
 }
 .phase-3 {
     left: 80% !important;
