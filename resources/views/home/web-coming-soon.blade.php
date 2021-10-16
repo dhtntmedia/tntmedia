@@ -126,9 +126,6 @@
         data-friction-y="0.1"
         data-scalar-x="25"
         data-scalar-y="15">
-        <li class="layer" data-depth="0.10">
-            <div class="bg-layer-one"></div>
-        </li>
         <li class="layer" data-depth="0.30">
             <div class="bg-layer-two"></div>
         </li>
