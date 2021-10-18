@@ -64,6 +64,21 @@
                 $(".comingsoon-one, .comingsoon-two, .comingsoon-four, .titlebar").css("background-position-x", newvalueX+"%");
             });
         });
+
+        $(document).ready(function() {
+            var movementStrength = 90;
+            // var height = movementStrength / $(window).height();
+            var width = movementStrength / $(window).width();
+
+            $("body").mousemove(function(e){
+                var decreace = ($(window).width() - e.pageX);
+                var pageX = ( decreace / ($(window).width() ) * 100);
+                var newvalueX = width * pageX * -1 - 25;
+
+                newvalueX = newvalueX + 100;
+                $("#new-moon").css("background-position-x", newvalueX+"%");
+            });
+        });
     </script>
 
     <!--Start of HappyFox Live Chat Script-->
@@ -99,10 +114,10 @@
     <noscript><img height="1" width="1" style="display:none"
                    src="https://www.facebook.com/tr?id=4497869476922952&ev=PageView&noscript=1"
     /></noscript>
-    <!-- End Facebook Pixel Code -->
-
 </head>
-<body>
+<body id="particles-js">
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 
 <div id="container" class="wrapper container">
     <ul id="scene" class="scene unselectable"
@@ -111,29 +126,14 @@
         data-scalar-x="25"
         data-scalar-y="15">
         <li class="layer" data-depth="0.10">
-            <div class="bg-layer-one"></div>
-        </li>
-        <li class="layer" data-depth="0.30">
             <div class="bg-layer-two"></div>
         </li>
-<!--        <li class="layer" data-depth="0.70">-->
-<!--            <div class="bg-layer-two"></div>-->
-<!--        </li>-->
         <li class="layer" data-depth="0.25"><div class="light purple c phase-5"></div></li>
         <li class="layer" data-depth="0.10">
             <div class="light orange d phase-8"></div>
         </li>
-<!--        <li class="layer" data-depth="0.4">-->
-<!--            <li class="layer" data-depth="0.15"><div class="light orange d phase-1"></div></li>-->
-<!--            <li class="layer" data-depth="0.2"><div class="light orange d phase-2"></div></li>-->
-<!--            <li class="layer" data-depth="0.1"><div class="light orange d phase-3"></div></li>-->
-<!--            <li class="layer" data-depth="0.2"><div class="light orange b phase-4"></div></li>-->
-<!--            <li class="layer" data-depth="0.25"><div class="light purple c phase-5"></div></li>-->
-<!--            <li class="layer" data-depth="0.05"><div class="light purple c phase-6"></div></li>-->
-<!--            <li class="layer" data-depth="0.15"><div class="light purple c phase-7"></div></li>-->
-<!--        </li>-->
         <li class="layer" data-depth="0.2">
-            <div class="bg-layer-three"></div>
+            <div title="3D interactive Moon"  id="new-moon"></div>
         </li>
         <li class="layer" data-depth="0.3">
             <img id="logo" height="130" src="assets/images/logo-gold.svg"/>
@@ -243,8 +243,118 @@
     }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=60c1cc1d37fad34d6a30b52e" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous" ></script>
-<script src="https://shibatoken.com/js/shiba-ui.js" type="text/javascript"></script>
+<script type="text/javascript">
+    particlesJS("particles-js", {
+        "particles": {
+            "number": {
+                "value": 404,
+                "density": {
+                    "enable": true,
+                    "value_area": 800
+                }
+            },
+            "color": {
+                "value": "#ffffff"
+            },
+            "shape": {
+                "type": "circle",
+                "stroke": {
+                    "width": 0,
+                    "color": "#000000"
+                },
+                "polygon": {
+                    "nb_sides": 5
+                },
+                "image": {
+                    "src": "img/github.svg",
+                    "width": 100,
+                    "height": 100
+                }
+            },
+            "opacity": {
+                "value": 1,
+                "random": true,
+                "anim": {
+                    "enable": true,
+                    "speed": 1,
+                    "opacity_min": 0,
+                    "sync": false
+                }
+            },
+            "size": {
+                "value": 1,
+                "random": true,
+                "anim": {
+                    "enable": false,
+                    "speed": 4,
+                    "size_min": 0.3,
+                    "sync": false
+                }
+            },
+            "line_linked": {
+                "enable": false,
+                "distance": 150,
+                "color": "#ffffff",
+                "opacity": 0.4,
+                "width": 1
+            },
+            "move": {
+                "enable": true,
+                "speed": 0.2,
+                "direction": "none",
+                "random": true,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false,
+                "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 600
+                }
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": {
+                    "enable": true,
+                    "mode": "bubble"
+                },
+                "onclick": {
+                    "enable": true,
+                    "mode": "repulse"
+                },
+                "resize": true
+            },
+            "modes": {
+                "grab": {
+                    "distance": 400,
+                    "line_linked": {
+                        "opacity": 1
+                    }
+                },
+                "bubble": {
+                    "distance": 243.62316369040352,
+                    "size": 0,
+                    "duration": 2.077922077922078,
+                    "opacity": 0.0812077212301345,
+                    "speed": 3
+                },
+                "repulse": {
+                    "distance": 535.9709601188878,
+                    "duration": 0.4
+                },
+                "push": {
+                    "particles_nb": 4
+                },
+                "remove": {
+                    "particles_nb": 2
+                }
+            }
+        },
+        "retina_detect": true
+    });
+</script>
 
 </body>
 </html>

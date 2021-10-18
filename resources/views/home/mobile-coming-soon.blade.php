@@ -101,8 +101,27 @@
         /></noscript>
     <!-- End Facebook Pixel Code -->
 
+    <style>
+        canvas {
+            display: block;
+            vertical-align: bottom;
+        } /* ---- particles.js container ---- */
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #111111;
+        }
+        .particles-js-canvas-el {
+            top: 0px;
+            position: absolute;
+        }
+    </style>
 </head>
-<body class="body" style="background: url('/assets/images/background-cartoon/stars.jpg') center no-repeat #000;">
+
+<body id="particles-js" class="body">
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <div id="how-to-buy" class="section__htb" style="background: none; margin-top: 20px;">
         <div style="max-width: 500px; margin: auto;">
             <div class="base-circle-wrap" style="position:relative;">
@@ -149,5 +168,117 @@
     </div>
     <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=60c1cc1d37fad34d6a30b52e" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous" ></script>
     <script src="https://shibatoken.com/js/shiba-ui.js" type="text/javascript"></script>
+<script type="text/javascript">
+    particlesJS("particles-js", {
+        "particles": {
+            "number": {
+                "value": 404,
+                "density": {
+                    "enable": true,
+                    "value_area": 800
+                }
+            },
+            "color": {
+                "value": "#ffffff"
+            },
+            "shape": {
+                "type": "circle",
+                "stroke": {
+                    "width": 0,
+                    "color": "#000000"
+                },
+                "polygon": {
+                    "nb_sides": 5
+                },
+                "image": {
+                    "src": "img/github.svg",
+                    "width": 100,
+                    "height": 100
+                }
+            },
+            "opacity": {
+                "value": 1,
+                "random": true,
+                "anim": {
+                    "enable": true,
+                    "speed": 1,
+                    "opacity_min": 0,
+                    "sync": false
+                }
+            },
+            "size": {
+                "value": 1,
+                "random": true,
+                "anim": {
+                    "enable": false,
+                    "speed": 4,
+                    "size_min": 0.3,
+                    "sync": false
+                }
+            },
+            "line_linked": {
+                "enable": false,
+                "distance": 150,
+                "color": "#ffffff",
+                "opacity": 0.4,
+                "width": 1
+            },
+            "move": {
+                "enable": true,
+                "speed": 0.2,
+                "direction": "none",
+                "random": true,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false,
+                "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 600
+                }
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": {
+                    "enable": true,
+                    "mode": "bubble"
+                },
+                "onclick": {
+                    "enable": true,
+                    "mode": "repulse"
+                },
+                "resize": true
+            },
+            "modes": {
+                "grab": {
+                    "distance": 400,
+                    "line_linked": {
+                        "opacity": 1
+                    }
+                },
+                "bubble": {
+                    "distance": 243.62316369040352,
+                    "size": 0,
+                    "duration": 2.077922077922078,
+                    "opacity": 0.0812077212301345,
+                    "speed": 3
+                },
+                "repulse": {
+                    "distance": 535.9709601188878,
+                    "duration": 0.4
+                },
+                "push": {
+                    "particles_nb": 4
+                },
+                "remove": {
+                    "particles_nb": 2
+                }
+            }
+        },
+        "retina_detect": true
+    });
+</script>
 </body>
 </html>
