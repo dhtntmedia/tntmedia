@@ -42,10 +42,12 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- Styles -->
-    <link href="assets/css/shiba-ui.css" rel="stylesheet" type="text/css" />
+    <link href="https://shibatoken.com/css/shiba-ui.css" rel="stylesheet" type="text/css" />
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="images/webclip.png" rel="apple-touch-icon" />
     <link rel="stylesheet" type="text/css" href="assets/css/parallax.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/main-style.css"/>
-    <link rel="favicon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="favicon" type="image/x-icon" href="favicon.ico" />
     <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript">
 
@@ -119,7 +121,7 @@
 </head>
 
 <body id="particles-js" class="body">
-<script src="assets/js/particles.min.js"></script>
+<script src="assets/js/particles.js"></script>
     <div id="how-to-buy" class="section__htb" style="background: none; margin-top: 20px;">
         <div style="max-width: 500px; margin: auto;">
             <div class="base-circle-wrap" style="position:relative;">
@@ -165,7 +167,7 @@
         </ul>
     </div>
     <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=60c1cc1d37fad34d6a30b52e" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous" ></script>
-    <script src="assets/js/shiba-ui.js" type="text/javascript"></script>
+    <script src="https://shibatoken.com/js/shiba-ui.js" type="text/javascript"></script>
 <script type="text/javascript">
     particlesJS("particles-js", {
         "particles": {
