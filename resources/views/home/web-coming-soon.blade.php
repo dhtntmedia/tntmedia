@@ -45,7 +45,7 @@
     <link href="assets/css/shiba-ui.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="assets/css/parallax.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/main-style.css"/>
-    <link rel="favicon" href="{{ asset('images/favicon.ico') }}"  type='image/x-icon'>
+    <link rel="favicon" href="assets/images/favicon.ico"  type='image/x-icon'>
     <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript">
 
