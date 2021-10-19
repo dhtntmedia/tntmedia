@@ -42,7 +42,7 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- Styles -->
-    <link href="https://shibatoken.com/css/shiba-ui.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/shiba-ui.css" rel="stylesheet" type="text/css" />
     <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
     <link href="images/webclip.png" rel="apple-touch-icon" />
     <link rel="stylesheet" type="text/css" href="assets/css/parallax.css"/>
@@ -116,8 +116,7 @@
     /></noscript>
 </head>
 <body id="particles-js">
-<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+<script src="assets/js/particles.js"></script>
 
 <div id="container" class="wrapper container">
     <ul id="scene" class="scene unselectable"
@@ -132,8 +131,9 @@
         <li class="layer" data-depth="0.10">
             <div class="light orange d phase-8"></div>
         </li>
-        <li class="layer" data-depth="0.2">
+        <li class="layer" data-depth="0.2" style="position: relative;">
             <div title="3D interactive Moon"  id="new-moon"></div>
+            <div title="3D interactive Full Moon Shadow" id="new-moon-shadow" style="top:-690px;"></div>
         </li>
         <li class="layer" data-depth="0.3">
             <img id="logo" height="130" src="assets/images/logo-gold.svg"/>
