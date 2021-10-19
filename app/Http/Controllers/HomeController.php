@@ -28,10 +28,10 @@ class HomeController extends Controller
             $data["title"] = $title;
             $data["keywords"] = $keyWords;
 
-            return view('home.mobile-coming-soon', ['data' => $data]);
+            return view('home.mobile-coming-soon')->with('data', $data);
         } else {
 
-            return view('home.web-coming-soon', ['data' => $data]);
+            return view('home.web-coming-soon')->with('data', $data);
         }
     }
     /**
