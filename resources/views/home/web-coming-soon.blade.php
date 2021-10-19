@@ -43,11 +43,9 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- Styles -->
     <link href="assets/css/shiba-ui.css" rel="stylesheet" type="text/css" />
-    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
-    <link href="images/webclip.png" rel="apple-touch-icon" />
     <link rel="stylesheet" type="text/css" href="assets/css/parallax.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/main-style.css"/>
-    <link rel="favicon" type="image/x-icon" href="favicon.ico" />
+    <link rel="favicon" type="image/x-icon" href="/favicon.ico" />
     <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript">
 
