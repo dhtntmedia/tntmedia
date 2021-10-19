@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', APP_ENV),
+    'url' => env('APP_URL', env('APP_ENV')),
 
     'asset_url' => env('ASSET_URL', 'public'),
 
