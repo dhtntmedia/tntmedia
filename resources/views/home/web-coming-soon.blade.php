@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>TNT Media - Launch Day</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+    <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
     <!-- Behavioral Meta Data -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -17,8 +19,6 @@
           property="twitter:description" />
     <meta property="og:type" content="mobile" />
     <meta name="format-detection" content="telephone=no" />
-    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
-    <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
     <meta name="facebook-domain-verification" content="mwfbfo9q0eo2finvzilcdfqs68secg" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-209212263-1">
