@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta property="og:title" content="TNT Media - Launch Day" />
     <meta property="og:url" content="https://www.tntmedia.co.uk" />
-    <meta property="og:image" content="https://www.tntmedia.co.uk/public/assets/images/TNT-media-gallexy.png" />
+    <meta property="og:image" content="https://www.tntmedia.co.uk/assets/images/TNT-media-gallexy.png" />
+    <link rel="favicon" href="https://www.tntmedia.co.uk/assets/images/favicon.ico"  type='image/x-icon'>
     <meta name="keywords"
           content="tnt, tnt media, #tntmedia1111, 1111, launch,
           tnt digital, tnt.com, tnt.co.uk, tnt media tech ltd, tnt media tech limited" />
@@ -16,7 +17,6 @@
     <meta content="In the Universe everything moves in the vacuums of space, join us and create some great in your space."
           property="twitter:description" />
     <meta property="og:type" content="mobile" />
-    <meta name="format-detection" content="telephone=no" />
     <meta name="facebook-domain-verification" content="mwfbfo9q0eo2finvzilcdfqs68secg" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-209212263-1">
@@ -45,7 +45,6 @@
     <link href="assets/css/shiba-ui.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="assets/css/parallax.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/main-style.css"/>
-    <link rel="favicon" href="assets/images/favicon.ico"  type='image/x-icon'>
     <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript">
 
