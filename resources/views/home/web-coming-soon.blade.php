@@ -12,7 +12,7 @@
     <meta property="og:url" content="https://www.tntmedia.co.uk" />
     <meta property="og:image" content="https://www.tntmedia.co.uk/public/assets/images/TNT-media-gallexy.png" />
     <meta name="keywords"
-          content="{{ $data['keywords'] }}" />
+          content="{{ $data['keyword'] }}" />
     <meta content="TNT Media" property="twitter:title" />
     <meta content="In the Universe everything moves in the vacuums of space, join us and create some great in your space."
           property="twitter:description" />
