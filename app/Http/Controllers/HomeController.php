@@ -118,7 +118,7 @@ class HomeController extends Controller
     public function getSubtitles($subs, $type = 'keywords')
     {
         if ($type === 'keywords') {
-            return join(",\n\r", $subs);
+            return join(",\n", $subs);
         } else {
             return ' - ' . join(" | ", $subs);
         }
@@ -171,7 +171,7 @@ class HomeController extends Controller
             'online advertising',
         ];
 
-        return join(",\n\r", $text);
+        return join(",\n", $text);
     }
 
     public function keywordLocations()
@@ -298,6 +298,6 @@ class HomeController extends Controller
             'Yorkshire Humber',
         ];
 
-        return join(",\n\r", $locations);
+        return join(",\n", $locations);
     }
 }
