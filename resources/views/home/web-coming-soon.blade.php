@@ -131,7 +131,6 @@
         </li>
         <li class="layer" data-depth="0.2" style="position: relative;">
             <div title="3D interactive Moon"  id="new-moon"></div>
-            <div title="3D interactive Full Moon Shadow" id="new-moon-shadow" style="top:-690px;"></div>
         </li>
         <li class="layer" data-depth="0.3">
             <img id="logo" height="130" src="assets/images/logo-gold.svg"/>
