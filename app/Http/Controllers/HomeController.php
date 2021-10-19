@@ -26,7 +26,8 @@ class HomeController extends Controller
 
         if ( $agent->isMobile() ) {
             $data["title"] = $title;
-            $data["keywords"] = $keyWords;
+            $data["keywords"] = '';
+//                $keyWords;
 
             return view('home.mobile-coming-soon')->with('data', $data);
         } else {
