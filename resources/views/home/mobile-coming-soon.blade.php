@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <title>TNT Media - Launch Day</title>
     <!-- Behavioral Meta Data -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+    <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta property="og:title" content="TNT Media - Launch Day" />
-    <meta property="og:url" content="https://www.tntmedia.co.uk" />
-    <meta property="og:image" content="https://www.tntmedia.co.uk/public/assets/images/TNT-media-gallexy.png" />
+    <meta property="og:url" content="{{ env("APPLICATION_DOMAIN") }}" />
+    <meta property="og:image" content="{{ asset("images/TNT-media-gallexy.png") }}" />
     <meta name="keywords"
           content="tnt, tnt media, #tntmedia1111, 1111, launch,
           tnt digital, tnt.com, tnt.co.uk, tnt media tech ltd, tnt media tech limited" />
@@ -44,10 +46,9 @@
     <!-- Styles -->
     <link href="https://shibatoken.com/css/shiba-ui.css" rel="stylesheet" type="text/css" />
     <link href="images/webclip.png" rel="apple-touch-icon" />
-    <link rel="stylesheet" type="text/css" href="assets/css/parallax.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/main-style.css"/>
-    <link rel="favicon" type="image/x-icon" href="favicon.ico" />
-    <script src="assets/js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ asset("css/parallax.css") }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset("css/coming-soon.css") }}"/>
+    <script src="{{ asset("js/jquery.min.js") }}"></script>
     <script type="text/javascript">
 
         $(document).ready(function() {

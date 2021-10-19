@@ -2,7 +2,7 @@
 <html data-wf-page="60c1cc1d37fad3862030b52f">
 <head>
     <meta charset="utf-8">
-    <title>TNT Media - Launch Day</title>
+    <title>{{ $data['title'] }}</title>
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
     <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
     <!-- Behavioral Meta Data -->
@@ -12,13 +12,11 @@
     <meta property="og:url" content="https://www.tntmedia.co.uk" />
     <meta property="og:image" content="https://www.tntmedia.co.uk/public/assets/images/TNT-media-gallexy.png" />
     <meta name="keywords"
-          content="tnt, tnt media, #tntmedia1111, 1111, launch,
-          tnt digital, tnt.com, tnt.co.uk, tnt media tech ltd, tnt media tech limited" />
+          content="{{ $data['keywords'] }}" />
     <meta content="TNT Media" property="twitter:title" />
     <meta content="In the Universe everything moves in the vacuums of space, join us and create some great in your space."
           property="twitter:description" />
-    <meta property="og:type" content="mobile" />
-    <meta name="format-detection" content="telephone=no" />
+    <meta property="og:type" content="desktop" />
     <meta name="facebook-domain-verification" content="mwfbfo9q0eo2finvzilcdfqs68secg" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-209212263-1">
@@ -46,7 +44,7 @@
     <!-- Styles -->
     <link href="assets/css/shiba-ui.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="assets/css/parallax.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/main-style.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset("css/coming-soon.css") }}"/>
     <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript">
 
