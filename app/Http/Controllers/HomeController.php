@@ -18,20 +18,20 @@ class HomeController extends Controller
             'Coming soon'
         ];
         $title = env("APPLICATION_NAME") . $this->getSubtitles($subs, 'title');
-        $data = [
-            'title' => $title,
-        ];
         $agent = new Agent();
         $keyWords = $this->getKeywords($subs);
 
-        if ( $agent->isMobile() ) {
-            $data["title"] = $title;
-            $data["keywords"] = $keyWords;
+        $data = [
+            'title' => $title,
+            'keyword' => $keyWords,
+        ];
 
-            return view('home.mobile-coming-soon')->with($data);
+        if ( $agent->isMobile() ) {
+
+            return view('home.mobile-coming-soon')->with('data', $data);
         } else {
 
-            return view('home.web-coming-soon')->with($data);
+            return view('home.web-coming-soon')->with('data', $data);
         }
     }
     /**
