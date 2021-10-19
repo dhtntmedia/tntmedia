@@ -52,9 +52,9 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://local.tntmedia.co.uk'),
+    'url' => env('APP_URL', APP_ENV),
 
-    'asset_url' => env('ASSET_URL', 'public/'),
+    'asset_url' => env('ASSET_URL', 'public'),
 
     /*
     |--------------------------------------------------------------------------
