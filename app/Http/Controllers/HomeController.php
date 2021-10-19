@@ -112,7 +112,7 @@ class HomeController extends Controller
 
     public function getKeywords($subs)
     {
-        return ' - ' . $this->getSubtitles($subs) . '' . $this->keywordText() . '' . $this->keywordLocations();
+        return $this->getSubtitles($subs) . '' . $this->keywordText() . '' . $this->keywordLocations();
     }
 
     public function getSubtitles($subs, $type = 'keywords')
@@ -120,7 +120,7 @@ class HomeController extends Controller
         if ($type === 'keywords') {
             return join(",\n\r", $subs);
         } else {
-            return join(" | ", $subs);
+            return ' - ' . join(" | ", $subs);
         }
     }
 
