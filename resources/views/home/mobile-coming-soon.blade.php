@@ -43,7 +43,6 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- Styles -->
     <link href="https://shibatoken.com/css/shiba-ui.css" rel="stylesheet" type="text/css" />
-    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
     <link href="images/webclip.png" rel="apple-touch-icon" />
     <link rel="stylesheet" type="text/css" href="assets/css/parallax.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/main-style.css"/>
