@@ -45,7 +45,7 @@
     <link href="assets/css/shiba-ui.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="assets/css/parallax.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/main-style.css"/>
-    <link rel="favicon" type="image/x-icon" href="/public/favicon.ico" />
+    <link rel="favicon" type="image/x-icon" href="/favicon.ico" />
     <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript">
 
