@@ -240,6 +240,7 @@
 </script>
 
 <script type="text/javascript">
+    ParticleCloud.init(canvasID, numberOfParticles, beforeRenderCallback, afterRenderCallback);
     particlesJS("particles-js", {
         "particles": {
             "number": {

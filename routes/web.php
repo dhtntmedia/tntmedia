@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\NewsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,12 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', [HomeController::class, 'comingSoon']);
+Route::get('/news', [NewsController::class, 'index']);
+Route::get('/coming-soon', [HomeController::class, 'comingSoon']);
 
+Route::post('/', function () {
+    // Update the user's profile...
+
+    Route::get('/', [HomeController::class, 'comingSoon']);
+    return redirect('/coming-soon')->with('status', 'Coming Soon!');
+});
