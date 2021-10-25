@@ -16,5 +16,5 @@ use App\Http\Controllers\NewsController;
 */
 
 Route::get('/news', [NewsController::class, 'index']);
-Route::get('/', [HomeController::class, 'comingSoon']);
+Route::redirect('/', '/coming-home', 301);
 Route::get('/coming-soon', [HomeController::class, 'comingSoon']);

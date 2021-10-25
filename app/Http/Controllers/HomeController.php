@@ -14,7 +14,6 @@ class HomeController extends Controller
      */
     public function comingSoon()
     {
-        $routing = Route::redirect('/', '/coming-home', 301);
         $subs = [
             'Launch day',
             'Coming soon'
