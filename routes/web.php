@@ -18,8 +18,4 @@ use Illuminate\Support\Facades\Redirect;
 
 Route::get('/news', [NewsController::class, 'index']);
 Route::get('/coming-soon', [HomeController::class, 'comingSoon']);
-
-Route::get('/', function () {
-    // Update the user's profile...
-    Redirect::route('coming-soon');
-});
+Route::redirect('/', '/coming-soon');
