@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NewsController;
-use Illuminate\Support\Facades\Redirect;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +17,4 @@ use Illuminate\Support\Facades\Redirect;
 
 Route::get('/news', [NewsController::class, 'index']);
 Route::get('/', [HomeController::class, 'comingSoon']);
-//Route::redirect('/', '/coming-soon');
 Route::get('/coming-soon', [HomeController::class, 'comingSoon']);

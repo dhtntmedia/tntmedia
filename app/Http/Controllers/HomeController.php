@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 use Jenssegers\Agent\Agent;
+use Illuminate\Support\Facades\Route;
 
 class HomeController extends Controller
 {
@@ -13,6 +14,7 @@ class HomeController extends Controller
      */
     public function comingSoon()
     {
+        $routing = Route::redirect('/', '/coming-home', 301);
         $subs = [
             'Launch day',
             'Coming soon'
