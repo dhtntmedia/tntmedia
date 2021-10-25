@@ -18,9 +18,7 @@ use App\Http\Controllers\NewsController;
 Route::get('/news', [NewsController::class, 'index']);
 Route::get('/coming-soon', [HomeController::class, 'comingSoon']);
 
-Route::post('/', function () {
+Route::get('/', function () {
     // Update the user's profile...
-
-    Route::get('/', [HomeController::class, 'comingSoon']);
     return redirect('/coming-soon')->with('status', 'Coming Soon!');
 });
