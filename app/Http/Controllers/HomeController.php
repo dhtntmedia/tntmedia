@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 use Jenssegers\Agent\Agent;
-use Illuminate\Support\Facades\Route;
 
 class HomeController extends Controller
 {
