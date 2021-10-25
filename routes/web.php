@@ -21,5 +21,5 @@ Route::get('/coming-soon', [HomeController::class, 'comingSoon']);
 
 Route::get('/', function () {
     // Update the user's profile...
-    Redirect::route('comingSoon');
+    Redirect::route('coming-soon');
 });
