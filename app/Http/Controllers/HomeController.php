@@ -171,7 +171,7 @@ class HomeController extends Controller
             'online advertising',
         ];
 
-        return join(",\n", $text);
+        return join(",\n", ucwords($text));
     }
 
     public function keywordLocations()
@@ -298,6 +298,6 @@ class HomeController extends Controller
             'Yorkshire Humber',
         ];
 
-        return join(",\n", $locations);
+        return join(",\n", ucwords($locations));
     }
 }

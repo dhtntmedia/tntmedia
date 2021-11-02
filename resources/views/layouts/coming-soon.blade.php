@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html data-wf-page="60c1cc1d37fad3862030b52f">
 <head>
-    <meta charset="utf-8">
     <title>{{ $data['title'] }}</title>
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
     <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
-    <!-- Behavioral Meta Data -->
+    <meta name="title" content="{{ $data['title'] }} - Tautological News and Technology | Launch Day">
+    <meta name="description" content="We are a UK based company. We work with clients all over the world to help them
+    connect with their audiences through all forms of digital media.">
+    <meta name="keywords" content="{{ $data['keyword'] }}">
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="1 days">
+    <meta name="author" content="TNT Media">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta property="og:title" content="TNT Media - Launch Day" />
     <meta property="og:url" content="https://www.tntmedia.co.uk/coming-soon" />
     <meta property="og:image" content="https://www.tntmedia.co.uk/public/assets/images/TNT-media-gallexy.png" />
-    <meta name="keywords"
-          content="{{ $data['keyword'] }}" />
     <meta content="TNT Media" property="twitter:title" />
-    <meta content="In the Universe everything moves in the vacuums of space, join us and create some great in your space."
+    <meta content="We are a UK based company. We work with clients all over the world to help them
+    connect with their audiences through all forms of digital media."
           property="twitter:description" />
     <meta property="og:type" content="desktop" />
-    <meta name="facebook-domain-verification" content="mwfbfo9q0eo2finvzilcdfqs68secg" />
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-209212263-1">
     </script>
@@ -38,7 +44,6 @@
             d.parentNode.insertBefore(e,d);
         })(document,window,cpm);
     </script>
-
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- Styles -->
