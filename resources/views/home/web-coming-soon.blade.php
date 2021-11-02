@@ -19,7 +19,7 @@
             <div title="3D interactive Moon"  id="new-moon"></div>
         </li>
         <li class="layer" data-depth="0.3">
-            <img id="logo" height="130" src="assets/images/logo-gold.svg"/>
+            <img id="logo" height="130" src="assets/images/main-logo.svg"/>
             <p class="comingsoon-one">Coming Soon</p>
             <p class="comingsoon-two d-none d-sm-block">Nov</p>
             <p class="comingsoon-three d-none d-sm-block" style="color: #fff;">11<span style="color: #bea671 !important;">.</span>11</p>
