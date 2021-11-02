@@ -23,7 +23,7 @@ class HomeController extends Controller
 
         $data = [
             'title' => $title,
-            'keyword' => $keyWords,
+            'keyword' => ucwords($keyWords),
         ];
 
         if ( $agent->isMobile() ) {
@@ -171,7 +171,7 @@ class HomeController extends Controller
             'online advertising',
         ];
 
-        return join(",\n", ucfirst($text));
+        return join(",\n", $text);
     }
 
     public function keywordLocations()
@@ -298,6 +298,6 @@ class HomeController extends Controller
             'Yorkshire Humber',
         ];
 
-        return join(",\n", ucfirst($locations));
+        return join(",\n", $locations);
     }
 }
