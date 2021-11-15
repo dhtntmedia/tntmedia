@@ -1,0 +1,9 @@
+#birds-js {
+    background: linear-gradient(#ccddee, #FFD3D6);
+}
+
+#birds-js canvas {
+    display: block;
+    vertical-align: bottom;
+    height: 700px;
+}

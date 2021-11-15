@@ -1,29 +1,35 @@
-<title>Newsblock. The Next Generation WordPress News Theme</title>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="profile" href="https://gmpg.org/xfn/11" />
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta charset="utf-8" />
+<title>{{ $data['title'] }}</title>
+<link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+<link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
+<meta name="title" content="{{ $data['title'] }} - Tautological News and Technology | Launch Day">
+<meta name="description" content="We are a UK based company. We work with clients all over the world to help them
+    connect with their audiences through all forms of digital media.">
+<meta name="keywords" content="{{ $data['keyword'] }}">
+<meta name="robots" content="index, follow">
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<meta name="revisit-after" content="1 days">
+<meta name="author" content="TNT Media">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta property="og:url" content="https://www.tntmedia.co.uk/coming-soon" />
+<meta property="og:image" content="https://www.tntmedia.co.uk/public/assets/images/TNT-media-gallexy.png" />
+<meta content="TNT Media" property="twitter:title" />
+<meta content="We are a UK based company. We work with clients all over the world to help them
+    connect with their audiences through all forms of digital media."
+      property="twitter:description" />
+<meta property="og:type" content="desktop" />
 
-<!-- This site is optimized with the Yoast SEO plugin v17.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-@include('partials.style')
-
-<link rel="canonical" href="{{ env('APPLICATION_NAME') }}" />
-
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://newsblocktheme.com/newsblock/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://newsblocktheme.com/newsblock/wp-includes/wlwmanifest.xml" />
-<meta name="generator" content="WordPress 5.8.1" />
-<meta name="generator" content="WooCommerce 5.7.1" />
-<link rel="shortlink" href="https://newsblocktheme.com/newsblock/" />
-<link rel="preload" href="{{ asset('fonts/absolute-reviews-icons.woff') }}" as="font" type="font/woff" crossorigin />
-<link rel="preload" href="{{ asset('fonts/advanced-popups-icons.woff') }}" as="font" type="font/woff" crossorigin />
-
-<noscript>
-    <style>
-        .woocommerce-product-gallery {
-            opacity: 1 !important;
-        }
-    </style>
-</noscript>
-<!-- There is no amphtml version available for this URL. -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+<script data-require="jquery" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://tympanus.net/Development/LineHoverStyles/css/base.css" />
+<script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
+<link rel="stylesheet" href="{{ asset('css/main.css') }}" />
+<link rel="stylesheet" href="{{ asset('css/navigation.css') }}" />
+@stack('styles')
+<link rel="stylesheet" href="{{ asset('css/header.css') }}" />
+<link rel="stylesheet" href="{{ asset('css/footer.css') }}" />

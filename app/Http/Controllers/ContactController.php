@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
 use Illuminate\Http\Request;
-use App\Services\NewsApiService;
 
-class NewsController extends Controller
+class ContactController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,11 +14,24 @@ class NewsController extends Controller
      */
     public function index()
     {
-        $news = new NewsApiService();
-//        return $news->getNews();
+        $data = [
+            'title' => '',
+            'keyword' => '',
+        ];
+
+        return view('contact.index')->with('data', $data);
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function showStartaProject()
+    {
         $data = [];
 
-        return view('news.home.index')->with('data', $data);
+        return view('contact.index')->with('data', $data);
     }
 
     /**
@@ -45,10 +58,10 @@ class NewsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Contact $contact)
     {
         //
     }
@@ -56,10 +69,10 @@ class NewsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Contact $contact)
     {
         //
     }
@@ -68,10 +81,10 @@ class NewsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Contact $contact)
     {
         //
     }
@@ -79,10 +92,10 @@ class NewsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Contact $contact)
     {
         //
     }

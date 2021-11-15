@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+    <meta charset="UTF-8">
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+    <meta name="robots" content="noindex">
+    <title>CodePen - Cloud (SVG filter + CSS)</title>
+
+
+
+
+    <style>
+        html, body {
+            margin: 0;
+            background: #000;
+        }
+        body:after {
+            content: 'click to update';
+            font-size: .8em;
+            color: rgba(0, 0, 0, .9);
+            position: fixed;
+            width: 100%;
+            bottom: 1em;
+            text-align: center;
+        }
+
+        #cloud {
+            overflow: hidden;
+            width: 1px; height: 1px;
+            transform: translate(-100%, -100%);
+            border-radius: 50%;
+            filter: url(#filter);
+            opacity: 0.17;
+        }
+    </style>
+
+    <script>
+        window.console = window.console || function(t) {};
+    </script>
+
+
+
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+
+
+</head>
+
+<body translate="no">
+<div id="cloud" style="box-shadow: rgb(240, 255, 243) 23vw 78vh 36vmin 7vmin, rgb(17, 203, 215) 60vw 99vh 24vmin 9vmin, rgb(17, 203, 215) 80vw 40vh 40vmin 15vmin, rgb(198, 241, 231) 48vw 52vh 35vmin 2vmin, rgb(198, 241, 231) 28vw 20vh 20vmin 20vmin, rgb(250, 70, 89) 99vw 49vh 24vmin 8vmin, rgb(250, 70, 89) 57vw 3vh 31vmin 16vmin, rgb(17, 203, 215) 98vw 5vh 21vmin 17vmin, rgb(198, 241, 231) 52vw 98vh 40vmin 18vmin, rgb(240, 255, 243) 82vw 61vh 27vmin 20vmin, rgb(17, 203, 215) 27vw 55vh 40vmin 10vmin, rgb(17, 203, 215) 77vw 46vh 34vmin 17vmin, rgb(250, 70, 89) 60vw 61vh 37vmin 11vmin, rgb(198, 241, 231) 29vw 86vh 33vmin 4vmin, rgb(198, 241, 231) 33vw 16vh 28vmin 9vmin, rgb(198, 241, 231) 47vw 66vh 29vmin 14vmin, rgb(17, 203, 215) 86vw 3vh 31vmin 5vmin, rgb(17, 203, 215) 17vw 84vh 31vmin 7vmin, rgb(17, 203, 215) 44vw 75vh 21vmin 19vmin, rgb(17, 203, 215) 89vw 92vh 25vmin 16vmin, rgb(198, 241, 231) 47vw 54vh 37vmin 4vmin, rgb(17, 203, 215) 93vw 68vh 32vmin 11vmin, rgb(17, 203, 215) 99vw 95vh 23vmin 5vmin, rgb(250, 70, 89) 2vw 43vh 34vmin 15vmin, rgb(198, 241, 231) 49vw 78vh 37vmin 19vmin, rgb(240, 255, 243) 22vw 72vh 22vmin 16vmin, rgb(250, 70, 89) 4vw 3vh 33vmin 7vmin, rgb(240, 255, 243) 4vw 98vh 28vmin 14vmin, rgb(250, 70, 89) 57vw 81vh 25vmin 3vmin, rgb(250, 70, 89) 87vw 24vh 37vmin 5vmin, rgb(17, 203, 215) 10vw 53vh 30vmin 11vmin, rgb(240, 255, 243) 48vw 67vh 20vmin 9vmin, rgb(240, 255, 243) 94vw 3vh 33vmin 11vmin, rgb(250, 70, 89) 63vw 58vh 22vmin 16vmin, rgb(240, 255, 243) 2vw 22vh 32vmin 18vmin, rgb(198, 241, 231) 28vw 13vh 40vmin 5vmin, rgb(240, 255, 243) 83vw 28vh 36vmin 12vmin, rgb(250, 70, 89) 37vw 70vh 30vmin 8vmin, rgb(198, 241, 231) 20vw 44vh 24vmin 4vmin, rgb(250, 70, 89) 73vw 35vh 22vmin 17vmin, rgb(198, 241, 231) 16vw 90vh 26vmin 18vmin, rgb(198, 241, 231) 45vw 84vh 40vmin 7vmin, rgb(250, 70, 89) 67vw 18vh 37vmin 18vmin, rgb(250, 70, 89) 1vw 76vh 23vmin 6vmin, rgb(17, 203, 215) 72vw 80vh 24vmin 3vmin, rgb(240, 255, 243) 81vw 46vh 27vmin 11vmin, rgb(240, 255, 243) 42vw 49vh 29vmin 13vmin, rgb(250, 70, 89) 96vw 82vh 33vmin 2vmin, rgb(250, 70, 89) 96vw 69vh 37vmin 16vmin, rgb(198, 241, 231) 22vw 28vh 30vmin 6vmin, rgb(198, 241, 231) 37vw 91vh 36vmin 20vmin, rgb(240, 255, 243) 13vw 72vh 28vmin 1vmin, rgb(17, 203, 215) 14vw 79vh 23vmin 13vmin, rgb(17, 203, 215) 47vw 28vh 20vmin 15vmin, rgb(198, 241, 231) 30vw 100vh 31vmin 3vmin, rgb(250, 70, 89) 73vw 97vh 38vmin 12vmin, rgb(17, 203, 215) 52vw 52vh 23vmin 13vmin, rgb(240, 255, 243) 91vw 31vh 34vmin 19vmin, rgb(250, 70, 89) 61vw 64vh 36vmin 6vmin, rgb(240, 255, 243) 60vw 20vh 20vmin 15vmin, rgb(198, 241, 231) 4vw 49vh 29vmin 7vmin, rgb(17, 203, 215) 100vw 31vh 20vmin 10vmin, rgb(17, 203, 215) 35vw 35vh 31vmin 3vmin, rgb(198, 241, 231) 60vw 96vh 33vmin 2vmin, rgb(240, 255, 243) 81vw 43vh 40vmin 9vmin, rgb(240, 255, 243) 53vw 38vh 31vmin 16vmin, rgb(198, 241, 231) 26vw 54vh 31vmin 10vmin, rgb(240, 255, 243) 45vw 100vh 28vmin 17vmin, rgb(17, 203, 215) 69vw 71vh 38vmin 15vmin, rgb(240, 255, 243) 95vw 77vh 36vmin 8vmin, rgb(250, 70, 89) 16vw 96vh 21vmin 6vmin, rgb(198, 241, 231) 61vw 19vh 22vmin 12vmin, rgb(240, 255, 243) 43vw 81vh 23vmin 11vmin, rgb(240, 255, 243) 59vw 14vh 25vmin 15vmin, rgb(250, 70, 89) 17vw 33vh 33vmin 16vmin, rgb(198, 241, 231) 34vw 4vh 33vmin 1vmin, rgb(17, 203, 215) 60vw 38vh 36vmin 11vmin, rgb(17, 203, 215) 26vw 11vh 28vmin 11vmin, rgb(240, 255, 243) 48vw 18vh 36vmin 6vmin, rgb(250, 70, 89) 49vw 70vh 30vmin 6vmin, rgb(198, 241, 231) 43vw 65vh 31vmin 16vmin, rgb(198, 241, 231) 2vw 88vh 25vmin 6vmin, rgb(198, 241, 231) 61vw 26vh 31vmin 14vmin, rgb(17, 203, 215) 29vw 15vh 32vmin 18vmin, rgb(198, 241, 231) 100vw 76vh 33vmin 3vmin, rgb(17, 203, 215) 49vw 81vh 36vmin 6vmin, rgb(250, 70, 89) 1vw 66vh 30vmin 20vmin, rgb(250, 70, 89) 6vw 82vh 34vmin 2vmin, rgb(240, 255, 243) 86vw 72vh 28vmin 20vmin, rgb(250, 70, 89) 68vw 21vh 34vmin 14vmin, rgb(198, 241, 231) 80vw 94vh 31vmin 12vmin, rgb(17, 203, 215) 94vw 93vh 30vmin 10vmin, rgb(250, 70, 89) 44vw 23vh 30vmin 18vmin, rgb(17, 203, 215) 42vw 25vh 40vmin 12vmin, rgb(250, 70, 89) 34vw 18vh 34vmin 14vmin, rgb(198, 241, 231) 6vw 38vh 37vmin 17vmin, rgb(240, 255, 243) 9vw 60vh 25vmin 20vmin, rgb(240, 255, 243) 25vw 49vh 30vmin 20vmin, rgb(17, 203, 215) 34vw 40vh 26vmin 3vmin, rgb(240, 255, 243) 26vw 52vh 33vmin 1vmin;"></div>
+
+<svg width="0">
+    <filter id="filter">
+        <feTurbulence type="fractalNoise" baseFrequency=".01" numOctaves="10"></feTurbulence>
+        <feDisplacementMap in="SourceGraphic" scale="240"></feDisplacementMap>
+    </filter>
+</svg>
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+
+<script id="rendered-js">
+    function rn(from, to) {
+        return ~~(Math.random() * (to - from + 1)) + from;
+    }
+
+    function rs() {
+        return arguments[rn(1, arguments.length) - 1];
+    }
+
+    function boxShadows(max) {
+        let ret = [];
+        for (let i = 0; i < max; ++i) {if (window.CP.shouldStopExecution(0)) break;
+            ret.push(`
+      ${rn(1, 100)}vw ${rn(1, 100)}vh ${rn(20, 40)}vmin ${rn(1, 20)}vmin
+      ${rs('#000', '#955', '#9c9', '#779')}
+    `);
+        }window.CP.exitedLoop(0);
+        return ret.join(',');
+    }
+
+    const cloud = document.querySelector('#cloud');
+    function update() {
+        cloud.style.boxShadow = boxShadows(100);
+    }
+
+    window.addEventListener('load', update);
+    document.addEventListener('click', update);
+    //# sourceURL=pen.js
+</script>
+
+
+
+
+
+
+
+</body></html>

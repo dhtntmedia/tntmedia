@@ -1,0 +1,59 @@
+#header {
+    z-index: 400;
+}
+
+.show {
+    opacity: 1.0 !important;
+}
+
+#header .headingone, #star-con .headingone {
+    color: #ddd;
+    align-items: center;
+    display: flex;
+    font-family: Aveny T, Franklin Gothic, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    line-height: 24px;
+    margin: 0;
+    padding-left: 2px;
+    width: 100%;
+    text-transform: uppercase;
+    z-index: 700;
+}
+
+#header .headingtwo, #star-con .headingtwo {
+    font-family: Franklin Gothic, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    margin: 0;
+    width: 100%;
+    font-size: calc(44px + (16 * ((100vw - 375px) / 1225)));
+    letter-spacing: -1px;
+    line-height: calc(56px + (8 * ((100vw - 375px) / 1225)));
+    margin-top: 16px;
+    color: #bea671;
+    background-image: linear-gradient(to right, #bea671, #c7b588, #d1c39f, #dbd2b7, #e5e0cf, #e5e0cf, #e5e0cf, #e5e0cf, #dbd2b7, #d1c39f, #c7b588, #bea671);
+    z-index:0;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: 400px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 700;
+}
+
+#header .heading-text, #star-con .heading-text {
+    z-index: 700;
+    position: relative;
+    margin-top: 3em;
+}
+
+#header .body, #star-con .body {
+    margin-top: 20px;
+    color: #fff;
+    font-family: Franklin Gothic, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 28px;
+}

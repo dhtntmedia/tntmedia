@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\URL;
 use Illuminate\View\View;
 use Jenssegers\Agent\Agent;
 
@@ -41,7 +42,26 @@ class HomeController extends Controller
      */
     public function index()
     {
-        //
+        $subs = [
+            'Launch day',
+            'Coming soon'
+        ];
+
+        $title = env("APPLICATION_NAME") . $this->getSubtitles($subs, 'title');
+        $agent = new Agent();
+        $keyWords = $this->getKeywords($subs);
+
+        $data = [
+            'title' => $title,
+            'keyword' => ucwords($keyWords),
+            'next' => [
+                'name' => 'What we do',
+                'url'  => URL::to('what-we-do')
+            ],
+            'sunset' => $this->getSunSet(),
+        ];
+
+        return view('home.index')->with('data', $data);
     }
 
     /**
@@ -299,5 +319,25 @@ class HomeController extends Controller
         ];
 
         return join(",\n", $locations);
+    }
+
+    public function getSunSet()
+    {
+        $sunRiseSet = [
+            'sunrise' => date_sunrise(time()),
+            'sunset' => date_sunset(time()),
+            'time' => time(),
+        ];
+
+        $message = '';
+
+        if (date("H:i") >= $sunRiseSet['sunset'] ||
+            date("H:i") <= $sunRiseSet['sunrise']) {
+            $message = 'night';
+        } else {
+            $message = 'day';
+        }
+
+        return 'night';
     }
 }
