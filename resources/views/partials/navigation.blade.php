@@ -2,7 +2,7 @@
     <div id="navigation-stars" class="transition"></div>
     <nav class="navbar navbar-light transition">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand">
+            <a href="/" class="navbar-brand">
                 <img id="tnt-logo" height="70" src="{{ asset('images/logo-gold.svg') }}" />
             </a>
             <div class="d-flex d-xs-none">

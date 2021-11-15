@@ -16,7 +16,7 @@
             <div class="col-xs-6 col-sm-6 col-lg-3">
                 <ul>
                     <li>Contact</li>
-                    <li>Privacy Policy</li>
+                    <a href="{{ URL::to('privacy') }}"></a><li>Privacy Policy</li>
                     <li>Disclaimer</li>
                     <li class="item">TNT Media © 2021</li>
                 </ul>

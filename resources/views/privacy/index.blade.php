@@ -1,11 +1,11 @@
 @extends('layouts.main')
 
 @section('content')
-    <div class="container">
+    <div class="container" style="margin-top: 100px;">
         <div class="row">
             <div class="offset-md-2 col-md-8">
                 <h1 class="headingtwo">Privacy policy</h1>
-                <p class="body">Tokyo Digital Ltd understands that your privacy is important to you and that you care about how your personal data is used. We respect and value the privacy of everyone who visits this website, <a href="https://tntmedia.co.uk">https://tntmedia.co.uk</a> (&quot;Our Site&quot;) and will only collect and use personal data in ways that are described here, and in a way that is consistent with our obligations and your rights under the law. <br />Please read this Privacy Policy carefully and ensure that you understand it. Your acceptance of this Privacy Policy is requested, we require you to accept our Privacy Policy in respect of cookies used for tracking and analytics, and also if you submit data to us via forms contained within our website, for example the contact form, job application or freelancer application forms.</p>
+                <p class="body">TNT Media Tech LTD understands that your privacy is important to you and that you care about how your personal data is used. We respect and value the privacy of everyone who visits this website, <a href="https://tntmedia.co.uk">https://tntmedia.co.uk</a> (&quot;Our Site&quot;) and will only collect and use personal data in ways that are described here, and in a way that is consistent with our obligations and your rights under the law. <br />Please read this Privacy Policy carefully and ensure that you understand it. Your acceptance of this Privacy Policy is requested, we require you to accept our Privacy Policy in respect of cookies used for tracking and analytics, and also if you submit data to us via forms contained within our website, for example the contact form, job application or freelancer application forms.</p>
                     <strong class="headingone">Contents</strong>
                     <a class="link link--metis" href="#definitions-and-interpretation">Definitions and interpretation</a><br>
                     <a class="link link--metis" href="#information-about-us">Information about us</a><br>
@@ -31,7 +31,7 @@
                         <br />&quot;Cookie Law&quot; means the relevant parts of the Privacy and Electronic Communications (EC Directive) Regulations 2003.
                     </li>
                     <li class="list-item-l1">
-                        <strong id="information-about-us" class="list-item-title">Information about us</strong> Our Site is owned and operated by Tokyo Digital Ltd a Company registered in England under company number 10958626. <br />‍ <br />Registered address: 3 Oliver Close, Chatham, Kent, ME4 5EF <br />
+                        <strong id="information-about-us" class="list-item-title">Information about us</strong> Our Site is owned and operated by TNT Media Tech Ltd a Company registered in England under company number 13642648. <br />‍ <br />Registered address: 3 Oliver Close, Chatham, Kent, ME4 5EF <br />
                         <br />Main trading addresses: 3 Oliver Close, Chatham, Kent, ME4 5EF <br />
                         <br />Data Protection Officer: Daniel Harding <br />
                         <br />Email address: <a class="link link--metis" href="mailto:daniel.harding@tntmedia.co.uk">daniel.harding@tntmedia.co.uk</a>
@@ -107,9 +107,9 @@
                             </div>
                             <div id="w-node-d153d55b-7003-8eeb-b5f4-ffa84665f2b5-b5b08ca6" class="table-content">Identity information including CV/Resume for candidates that are live on our freelancer/contractor roster for receiving work from us.</div>
                             <div id="w-node-_3252f1f5-efad-a88c-56bb-5a5b5589a53d-b5b08ca6" class="table-content col2">Until 24 months where no contact, work or further consent to retain data has been obtained.</div>
-                            <div id="w-node-_0bcac03f-92a0-9456-ba50-7647edd01cbc-b5b08ca6" class="table-content">Identity information including CV/Resume for candidates who are deemed unsuitable to work for Tokyo Digital Ltd or its clients at this present time but may be in the future.</div>
+                            <div id="w-node-_0bcac03f-92a0-9456-ba50-7647edd01cbc-b5b08ca6" class="table-content">Identity information including CV/Resume for candidates who are deemed unsuitable to work for TNT Media Tech LTD or its clients at this present time but may be in the future.</div>
                             <div id="w-node-_6900509a-61d2-ddb5-f724-586467a4944a-b5b08ca6" class="table-content col2">24 months</div>
-                            <div id="w-node-f9705b66-0926-149f-c774-264295c4c43a-b5b08ca6" class="table-content">Identity information including CV/Resume for candidates who are deemed wholly unsuitable to work for Tokyo Digital Ltd or its clients.</div>
+                            <div id="w-node-f9705b66-0926-149f-c774-264295c4c43a-b5b08ca6" class="table-content">Identity information including CV/Resume for candidates who are deemed wholly unsuitable to work for TNT Media Tech LTD or its clients.</div>
                             <div id="w-node-_9d67f45f-a370-ae0a-2a85-21b57b2fc7d9-b5b08ca6" class="table-content col2">180 days</div>
                             <div id="w-node-_83a2d1f9-5934-6214-252a-236fdaaa1bb7-b5b08ca6" class="table-content lastrow">Payment information including bank details.</div>
                             <div id="w-node-a65e909b-1a7d-c96c-fad5-472c254f63ba-b5b08ca6" class="table-content col2 lastrow">No fixed period whilst there is a requirement to pay a contractor/freelancer, 24 months where no further work or contact has been retained or 180 days if the relationship has been ceased. Immediately removal at the request of the candidate.</div>
