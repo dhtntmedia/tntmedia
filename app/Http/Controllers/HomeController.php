@@ -328,8 +328,8 @@ class HomeController extends Controller
     public function getSunSet()
     {
         $sunRiseSet = [
-            'sunrise' => date_sunrise(time()),
-            'sunset' => date_sunset(time()),
+            'sunrise' => date_sunrise(time(), SUNFUNCS_RET_STRING, 22.34, 88.24, 90.5546, 5.50),
+            'sunset' => date_sunset(time(), SUNFUNCS_RET_STRING, 22.34, 88.24, 90.5546, 5.50),
             'time' => time(),
         ];
 
@@ -342,6 +342,6 @@ class HomeController extends Controller
             $message = 'day';
         }
 
-        return 'night';
+        return $message;
     }
 }
