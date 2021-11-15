@@ -35,3 +35,11 @@ Route::get('/join-us', [JoinUsController::class, 'index']);
 Route::get('/join-us/talent-application/{role}', [JoinUsController::class, 'show']);
 Route::get('/join-us/talent-application', [JoinUsController::class, 'showTalentApplication']);
 Route::get('/join-us/thank-you', [JoinUsController::class, 'showTalentApplication']);
+Route::get('/clear-cache', function() {
+    $exitCode = Artisan::call('cache:clear');
+    return 1;
+});
+Route::get('/chmod', function() {
+    $output = shell_exec('sudo chmod -R 775 ~var/www/html/tntmedia/resources');
+    return "Chmoded";
+});
