@@ -1,4 +1,4 @@
-<link href="{{ asset('css/menu.css') }}" rel="stylesheet" type="text/css" />
+<link href="{{ asset('css/menu.css?v=3') }}" rel="stylesheet" type="text/css" />
 
 <div id="tnt-menu">
     <div class="container">
