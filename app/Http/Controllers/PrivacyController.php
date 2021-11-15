@@ -15,8 +15,10 @@ class PrivacyController extends Controller
     public function index()
     {
         $data = [
-            'title' => '',
-            'keyword' => '',
+            'title' => 'Privacy Policy | ',
+            'keyword' => 'TNT Media - Privacy Policy | TNT Media T&Cs',
+            'description' => 'We are a UK based company. We work with clients all over the world to help them
+             connect with their audiences through all forms of digital media.'
         ];
 
         return view('privacy.index')->with('data', $data);
