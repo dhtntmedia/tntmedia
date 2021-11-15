@@ -1,3 +1,12 @@
+body {
+    background: rgb(8, 12, 20);
+    background: radial-gradient(circle, rgba(8, 12, 20, 0.1558998599439776) 0%, rgba(18, 18, 41, 0.1474964985994398) 100%);
+}
+
+#main-content {
+    background: #ddd;
+}
+
 #header canvas {
     display: block;
     vertical-align: bottom;

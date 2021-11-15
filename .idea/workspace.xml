@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1992afde-c7aa-4e3d-a75c-aec9ba0cfa05" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/partials/home/block-day.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/partials/home/block-night.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/clouds.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/clouds.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/clouds.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/clouds.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/home/header-day.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/home/header-day.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/stars.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/stars.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
