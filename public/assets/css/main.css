@@ -109,6 +109,21 @@ p::selection {
         padding-top: 2em;
         padding-bottom: 2em;
     }
+
+    .main-content-mobile {
+        margin-top: 100px;
+    }
+    #navigation .navbar-light a {
+        color: #FFF !important;
+    }
+
+    #navigation-stars {
+        opacity: 0.8 !important;
+    }
+
+    #tnt-menu-burger span {
+        background: #FFFFFF !important;
+    }
 }
 
 #blind-image {

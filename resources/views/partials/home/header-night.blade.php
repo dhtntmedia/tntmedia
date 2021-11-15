@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-8 stars-container">
                 <div id="stars"></div>
-                <div class="cotainer-fluid">
+                <div class="cotainer-fluid main-content-mobile">
                     <div class="row">
                         <div class="offset-md-1 col-md-9">
                             @include('partials.home.header')
