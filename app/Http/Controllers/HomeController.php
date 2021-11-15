@@ -45,8 +45,8 @@ class HomeController extends Controller
     public function index()
     {
         $subs = [
-            'Launch day',
-            'Coming soon'
+            'Digital agency',
+            'Tech firm'
         ];
 
         $title = env("APPLICATION_NAME") . $this->getSubtitles($subs, 'title');
@@ -61,6 +61,8 @@ class HomeController extends Controller
                 'url'  => URL::to('what-we-do')
             ],
             'sunset' => $this->getSunSet(),
+            'description' => 'We are a UK based company. We work with clients all over the world to help them
+             connect with their audiences through all forms of digital media.'
         ];
 
         return view('home.index')->with('data', $data);
