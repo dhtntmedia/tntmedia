@@ -27,7 +27,7 @@ Route::get('/coming-soon', [HomeController::class, 'comingSoon']);
 Route::get('/contact', [ContactController::class, 'index']);
 Route::get('/contact/start-a-project', [ContactController::class, 'index']);
 Route::get('/news', [NewsController::class, 'index']);
-Route::get('privacy', [PrivacyController::class, 'index']);
+Route::get('/privacy', [PrivacyController::class, 'index']);
 Route::get('/disclaimer', [DisclaimerController::class, 'index']);
 Route::get('/who-we-are', [WhoWeAreController::class, 'index']);
 Route::get('/what-we-do', [WhatWeDoController::class, 'index']);
