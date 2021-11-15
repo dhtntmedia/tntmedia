@@ -342,6 +342,6 @@ class HomeController extends Controller
             $message = 'day';
         }
 
-        return $message;
+        return 'day';
     }
 }

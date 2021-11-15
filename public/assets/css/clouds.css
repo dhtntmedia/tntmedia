@@ -175,6 +175,20 @@
     animation-delay: 8s;
 }
 
+@media only screen and (max-width: 600px) {
+
+    #navigation a {
+        color: rgba(62,17,82,1) !important;
+    }
+
+    #tnt-menu-burger span {
+        background: rgb(131,58,180) !important;
+        background: linear-gradient(
+                90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 100%) !important;
+    }
+}
+
+
 @-webkit-keyframes moveclouds {
     0%   { right: -20%; }
     100% { right: 120%; }
