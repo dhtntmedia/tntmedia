@@ -15,8 +15,8 @@ class HomeController extends Controller
     public function comingSoon()
     {
         $subs = [
-            'Launch day',
-            'Coming soon'
+            'Digital agency',
+            'Tech firm'
         ];
         $title = env("APPLICATION_NAME") . $this->getSubtitles($subs, 'title');
         $agent = new Agent();
@@ -25,6 +25,8 @@ class HomeController extends Controller
         $data = [
             'title' => $title,
             'keyword' => ucwords($keyWords),
+            'description' => 'We are a UK based company. We work with clients all over the world to help them
+             connect with their audiences through all forms of digital media.'
         ];
 
         if ( $agent->isMobile() ) {
@@ -138,7 +140,7 @@ class HomeController extends Controller
     public function getSubtitles($subs, $type = 'keywords')
     {
         if ($type === 'keywords') {
-            return join(",\n", $subs);
+            return join(", ", $subs);
         } else {
             return ' - ' . join(" | ", $subs);
         }

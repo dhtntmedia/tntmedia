@@ -1,24 +1,22 @@
 <meta charset="utf-8" />
-<title>{{ $data['title'] }}</title>
+<title>{{ $data['title'] }} - Tautological News and Technology</title>
 <link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
 <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
-<meta name="title" content="{{ $data['title'] }} - Tautological News and Technology | Launch Day">
-<meta name="description" content="We are a UK based company. We work with clients all over the world to help them
-    connect with their audiences through all forms of digital media.">
+<meta name="title" content="{{ $data['title'] }} - Tautological News and Technology">
+<meta name="description" content="{{ $data['description'] }}">
 <meta name="keywords" content="{{ $data['keyword'] }}">
 <meta name="robots" content="index, follow">
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="language" content="English">
 <meta name="revisit-after" content="1 days">
-<meta name="author" content="TNT Media">
+<meta name="author" content="{{ $data['title'] }}">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta property="og:url" content="https://www.tntmedia.co.uk/coming-soon" />
+<meta property="og:url" content="https://www.tntmedia.co.uk/" />
 <meta property="og:image" content="https://www.tntmedia.co.uk/public/assets/images/TNT-media-gallexy.png" />
-<meta content="TNT Media" property="twitter:title" />
-<meta content="We are a UK based company. We work with clients all over the world to help them
-    connect with their audiences through all forms of digital media."
+<meta content="{{ $data['title'] }}" property="twitter:title" />
+<meta content="{{ $data['description'] }}"
       property="twitter:description" />
 <meta property="og:type" content="desktop" />
 
