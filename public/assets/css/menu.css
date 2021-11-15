@@ -128,6 +128,12 @@
     animation: blink 1s 8.5s infinite;
 }
 
+@media only screen and (max-width: 600px) {
+    #tnt-menu p {
+        font-size: 1.1em;
+    }
+}
+
 @-webkit-keyframes blink {
     0% {
         opacity: 0;
