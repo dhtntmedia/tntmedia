@@ -26,7 +26,7 @@
 <script data-require="jquery" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://tympanus.net/Development/LineHoverStyles/css/base.css" />
 <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
-<link rel="stylesheet" href="{{ asset('css/main.css') }}" />
+<link rel="stylesheet" href="{{ asset('css/main.css') }}?v=3" />
 <link rel="stylesheet" href="{{ asset('css/navigation.css') }}" />
 @stack('styles')
 <link rel="stylesheet" href="{{ asset('css/header.css') }}" />
