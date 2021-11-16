@@ -25,9 +25,9 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 <script data-require="jquery" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://tympanus.net/Development/LineHoverStyles/css/base.css" />
-<script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
-<link rel="stylesheet" href="{{ asset('css/main.css') }}?v=4" />
-<link rel="stylesheet" href="{{ asset('css/navigation.css') }}" />
+<script type="text/javascript" src="{{ asset('js/main.js') }}?v=4"></script>
+<link rel="stylesheet" href="{{ asset('css/main.css') }}?v=5" />
+<link rel="stylesheet" href="{{ asset('css/navigation.css') }}?v=4" />
 @stack('styles')
-<link rel="stylesheet" href="{{ asset('css/header.css') }}" />
-<link rel="stylesheet" href="{{ asset('css/footer.css') }}" />
+<link rel="stylesheet" href="{{ asset('css/header.css') }}?v=4" />
+<link rel="stylesheet" href="{{ asset('css/footer.css') }}?v=4" />

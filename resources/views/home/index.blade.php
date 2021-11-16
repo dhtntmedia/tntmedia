@@ -1,13 +1,5 @@
 @extends('layouts.main')
 
-@push('styles')
-    <?php if($data['sunset'] === 'night') { ?>
-        <link rel="stylesheet" href="{{ asset('css/stars.css') }}?v=3" />
-    <?php } else { ?>
-        <link rel="stylesheet" href="{{ asset('css/clouds.css') }}?v=3" />
-    <?php } ?>
-@endpush
-
 @section('content')
 
     @include('partials.header')

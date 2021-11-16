@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="{{ asset('css/stars.css') }}?v=4" />
+
 <div id="header">
     <div class="container-fluid">
         <div class="row">
