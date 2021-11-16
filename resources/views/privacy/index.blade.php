@@ -1,10 +1,17 @@
 @extends('layouts.main')
 
 @section('content')
-    <div class="container" style="margin-top: 100px;">
+
+    <?php if($data['sunset'] === 'night') { ?>
+    <link rel="stylesheet" href="{{ asset('css/stars.css') }}" />
+    <?php } else { ?>
+    <link rel="stylesheet" href="{{ asset('css/clouds.css') }}" />
+    <?php } ?>
+
+    <div class="container">
         <div class="row">
             <div class="offset-md-2 col-md-8">
-                <h1 class="headingtwo">Privacy policy</h1>
+                <h1 class="headingtwo" style="margin-top: 100px;">Privacy policy</h1>
                 <p class="body">TNT Media Tech LTD understands that your privacy is important to you and that you care about how your personal data is used. We respect and value the privacy of everyone who visits this website, <a href="https://tntmedia.co.uk">https://tntmedia.co.uk</a> (&quot;Our Site&quot;) and will only collect and use personal data in ways that are described here, and in a way that is consistent with our obligations and your rights under the law. <br />Please read this Privacy Policy carefully and ensure that you understand it. Your acceptance of this Privacy Policy is requested, we require you to accept our Privacy Policy in respect of cookies used for tracking and analytics, and also if you submit data to us via forms contained within our website, for example the contact form, job application or freelancer application forms.</p>
                     <strong class="headingone">Contents</strong>
                     <a class="link link--metis" href="#definitions-and-interpretation">Definitions and interpretation</a><br>
