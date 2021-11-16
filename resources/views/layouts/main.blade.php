@@ -15,13 +15,8 @@
 @include('partials.footer')
 
 
-<script>
-    $(document).ready(function(){
-        $('#tnt-menu-burger').click(function(){
-            $(this).toggleClass('open');
-        });
-    });
-</script>
+<script type="text/javascript" src="{{ asset('js/main.js') }}?v=4"></script>
+
 @stack('scripts')
 
 </body>
