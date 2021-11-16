@@ -55,14 +55,28 @@ $(document).ready(function() {
             $('#navigation-stars').removeClass('show');
             $('#tnt-logo').attr('src', '/assets/images/logo-gold.svg');
             $('#tnt-menu-burger span').css('background', '#333');
-            $('#tnt-menu').hide();
+            $('#tnt-menu').removeClass('tnt-menu-open');
+            // $('#tnt-menu').fadeOut();
         } else {
+            $('#tnt-menu').show();
             $('.navbar').removeClass('navbar-light');
             $('.navbar').addClass('navbar-dark');
             $('#navigation-stars').addClass('show');
-            $('#tnt-menu').show();
             $('#tnt-menu-burger span').css('background', '#fff');
             $('#tnt-logo').attr('src', '/assets/images/logo-silver.svg');
+            $('#tnt-menu').addClass('tnt-menu-open');
         };
+    });
+
+    $('#tnt-menu-burger').click(function(){
+        $(this).toggleClass('open');
+    });
+
+    $('#tnt-media-menu-edit').onkeypress(function (){
+        var editVal = $(this).val('');
+
+        if(editVal == '') {
+            $(this).val('<span class="cursor4">_</span>');
+        }
     });
 });

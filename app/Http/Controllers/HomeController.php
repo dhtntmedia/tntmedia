@@ -146,7 +146,7 @@ class HomeController extends Controller
         if ($type === 'keywords') {
             return join(", ", $subs);
         } else {
-            return ' - ' . join(" | ", $subs);
+            return ' | ' . join(" | ", $subs);
         }
     }
 

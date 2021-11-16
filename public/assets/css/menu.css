@@ -1,13 +1,19 @@
-#tnt-menu  {
+#tnt-menu {
     background-color: #272727;
     padding: 10px;
     position: fixed;
-    margin-top: 98px;
+    border-radius: 4px !important;
+    border: 2px solid #000;
+    margin-top: 110px;
     z-index: 899;
-    height: 100%;
+    height: calc(100% - 120px);
     display: none;
-    right:0;
-    opacity: 0.995;
+    right: -100%;
+    opacity: 1.0;
+}
+
+.tnt-menu-open {
+    right: 10px !important;
 }
 
 #tnt-menu .fakeButtons {
@@ -56,7 +62,7 @@
     /*left: 50%;*/
     /*margin-left: -10.5em;*/
     text-align: left;
-    font-size: 1.25em;
+    font-size: 16.3px;
     font-family: monospace;
     white-space: normal;
     overflow: hidden;
@@ -133,6 +139,10 @@
         font-size: 1em;
 
     }
+}
+
+.tnt-media-menu-edit::before {
+    content: '> ';
 }
 
 @-webkit-keyframes blink {

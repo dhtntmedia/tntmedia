@@ -1,6 +1,6 @@
 <link href="{{ asset('css/menu.css?v=3') }}" rel="stylesheet" type="text/css" />
 
-<div id="tnt-menu">
+<div id="tnt-menu" class="transition">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -13,7 +13,7 @@
 {{--                    <p class="line2">[3]: <a href="{{ URL::to('/who-we-are') }}">Who we are</a>[?]</p>--}}
 {{--                    <p class="line2">[4]: <a href="{{ URL::to('/contact') }}">Contact us</a>[?]</p>--}}
                     <p class="line3">[?] To click a link use your mouse or use the number pad (Press space to select)<span class="cursor3">_</span></p>
-                    <p class="line4">> More pages loading 24hours<span class="cursor4" contenteditable="true">_ </span></p>
+                    <p class="line4 tnt-media-menu-edit" contenteditable="true"><span class="cursor4">_</span></p>
                 </div>
             </div>
         </div>
