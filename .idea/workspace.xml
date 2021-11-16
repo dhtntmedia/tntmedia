@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1992afde-c7aa-4e3d-a75c-aec9ba0cfa05" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Services/SunsetService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/SunsetService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/head.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +211,7 @@
       <workItem from="1634645301466" duration="29800000" />
       <workItem from="1634942376371" duration="259000" />
       <workItem from="1635181603418" duration="10761000" />
-      <workItem from="1637074062310" duration="8856000" />
+      <workItem from="1637074062310" duration="9024000" />
     </task>
     <servers />
   </component>

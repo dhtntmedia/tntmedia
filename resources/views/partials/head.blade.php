@@ -1,7 +1,7 @@
 <meta charset="utf-8" />
 <title>{{ $data['title'] }} - Tautological News and Technology</title>
-<link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
-<link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
+<link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}?v=3">
+<link rel="icon" type="image/png" href="{{ asset('favicon.png') }}?v=3">
 <meta name="title" content="{{ $data['title'] }} - Tautological News and Technology">
 <meta name="description" content="{{ $data['description'] }}">
 <meta name="keywords" content="{{ $data['keyword'] }}">
