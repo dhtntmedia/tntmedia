@@ -5,7 +5,7 @@
 <div id="header">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-8 stars-container" id="birds-js">
+            <div class="col-md-9 stars-container" id="birds-js">
                 <canvas id="canv"></canvas>
                 <div class="cotainer-fluid main-content-mobile">
                     <div class="row">
@@ -15,7 +15,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 d-xs-none">
+            <div class="col-md-3 d-xs-none">
                 <div class="iphone-case sticky-top sticky-offset">
                     <div class="iphone-screen">
                         <div class="iphone-top">
@@ -23,10 +23,18 @@
                             <div class="iphone-notch"></div>
                         </div>
                         <div class="iphone-background">
-                            {{--                            <h2 class="headingtwo">11:11</h2>--}}
-                            {{--                            <h3 class="headingtwo">--}}
-                            {{--                                Lets talk web development--}}
-                            {{--                            </h3>--}}
+                            <p class="headingtwo">
+                                <script>
+                                    var today = new Date();
+
+                                    document.write(today.getHours() + ":" + today.getMinutes());
+                                </script>
+                            </p>
+                            <p class="headingone">
+                                <script>
+                                    document.write(today.getDay() + " " + today.getMonth() + " " +today.getFullYear());
+                                </script>
+                            </p>
                         </div>
                     </div>
                 </div>

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\URL;
 use Illuminate\View\View;
 use Jenssegers\Agent\Agent;
+use App\Services\SunsetService;
 
 class HomeController extends Controller
 {
@@ -52,6 +53,7 @@ class HomeController extends Controller
         $title = env("APPLICATION_NAME") . $this->getSubtitles($subs, 'title');
         $agent = new Agent();
         $keyWords = $this->getKeywords($subs);
+        $sunset = new SunsetService();
 
         $data = [
             'title' => $title,
@@ -60,7 +62,7 @@ class HomeController extends Controller
                 'name' => 'What we do',
                 'url'  => URL::to('what-we-do')
             ],
-            'sunset' => $this->getSunSet(),
+            'sunset' => $sunset->getSunSet(),
             'description' => 'We are a UK based company. We work with clients all over the world to help them
              connect with their audiences through all forms of digital media.'
         ];
@@ -323,25 +325,5 @@ class HomeController extends Controller
         ];
 
         return join(",\n", $locations);
-    }
-
-    public function getSunSet()
-    {
-        $sunRiseSet = [
-            'sunrise' => date_sunrise(time(), SUNFUNCS_RET_STRING, 22.34, 88.24, 90.5546, 5.50),
-            'sunset' => date_sunset(time(), SUNFUNCS_RET_STRING, 22.34, 88.24, 90.5546, 5.50),
-            'time' => time(),
-        ];
-
-        $message = '';
-
-        if (date("H:i") >= $sunRiseSet['sunset'] ||
-            date("H:i") <= $sunRiseSet['sunrise']) {
-            $message = 'night';
-        } else {
-            $message = 'day';
-        }
-
-        return $message;
     }
 }

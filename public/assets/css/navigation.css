@@ -38,6 +38,10 @@
 
 }
 
+#tnt-media-social {
+    margin-left: 100px;
+}
+
 @media only screen and (max-width: 600px) {
     #navigation .navbar a, #navigation .navbar .navbar-toggler-icon {
         filter: grayscale(100%) !important;

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use App\Services\SunsetService;
 
 class ContactController extends Controller
 {
@@ -14,9 +15,13 @@ class ContactController extends Controller
      */
     public function index()
     {
+        $sunset = new SunsetService();
+
         $data = [
             'title' => '',
             'keyword' => '',
+            'sunset' => $sunset->getSunSet(),
+            'description' => ''
         ];
 
         return view('contact.index')->with('data', $data);

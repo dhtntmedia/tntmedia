@@ -5,7 +5,7 @@
             <a href="/" class="navbar-brand">
                 <img id="tnt-logo" height="70" src="{{ asset('images/logo-gold.svg') }}" />
             </a>
-            <div class="d-flex d-xs-none">
+            <div id="tnt-media-social" class="d-flex d-xs-none">
                 <a href="https://facebook.com/tntmedialtd" class="nav-item nav-link">
                     <i style="color: #fff !important;" class="fa fa-facebook"></i>
                 </a>

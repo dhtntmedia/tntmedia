@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Privacy;
 use Illuminate\Http\Request;
+use App\Services\SunsetService;
 
 class PrivacyController extends Controller
 {
@@ -14,10 +15,12 @@ class PrivacyController extends Controller
      */
     public function index()
     {
+        $sunset = new SunsetService();
+
         $data = [
             'title' => 'Privacy Policy | ',
             'keyword' => 'TNT Media - Privacy Policy | TNT Media T&Cs',
-            'sunset' => $this->getSunSet(),
+            'sunset' => $sunset->getSunSet(),
             'description' => 'We are a UK based company. We work with clients all over the world to help them
              connect with their audiences through all forms of digital media.'
         ];
@@ -280,25 +283,5 @@ class PrivacyController extends Controller
         ];
 
         return join(",\n", $locations);
-    }
-
-    public function getSunSet()
-    {
-        $sunRiseSet = [
-            'sunrise' => date_sunrise(time(), SUNFUNCS_RET_STRING, 22.34, 88.24, 90.5546, 5.50),
-            'sunset' => date_sunset(time(), SUNFUNCS_RET_STRING, 22.34, 88.24, 90.5546, 5.50),
-            'time' => time(),
-        ];
-
-        $message = '';
-
-        if (date("H:i") >= $sunRiseSet['sunset'] ||
-            date("H:i") <= $sunRiseSet['sunrise']) {
-            $message = 'night';
-        } else {
-            $message = 'day';
-        }
-
-        return $message;
     }
 }

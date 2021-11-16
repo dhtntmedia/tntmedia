@@ -92,6 +92,15 @@ p::selection {
     margin-top: 10em;
 }
 
+body {
+    display: grid;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+* {
+    box-sizing: border-box;
+}
+
 @media only screen and (max-width: 600px) {
 
     #blind-image-con {
@@ -188,6 +197,7 @@ p::selection {
 }
 
 .sticky-offset {
+    top: 6em;
     margin-bottom: -6em !important;
     margin-top: 6em !important;
 }
@@ -239,13 +249,16 @@ p::selection {
 }
 
 .iphone-background .headingone {
-    font-size: 1.5em !important;
-    line-height: 1.5em !important;
+    font-size: 0.8em !important;
+    line-height: 0.8em !important;
+    display: block !important;
 }
 
 .iphone-background .headingtwo {
-    font-size: 1.5em !important;
-    line-height: 1.5em !important;
+    font-size: 3em !important;
+    line-height: 3em !important;
+    font-weight: normal;
+    height: 110px;
 }
 
 #star-con {
