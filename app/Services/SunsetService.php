@@ -21,6 +21,6 @@ class SunsetService
             $message = 'day';
         }
 
-        return $message;
+        return 'day';
     }
 }
