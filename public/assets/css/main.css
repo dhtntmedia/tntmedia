@@ -89,9 +89,14 @@ p::selection {
     width: 100%;
     background: url('https://miro.medium.com/max/1166/1*RjSSTWjAyfoYhP9riSbhyQ.png') top left;
     cursor: grab;
+    margin-top: 10em;
 }
 
 @media only screen and (max-width: 600px) {
+    
+    #blind-image-con {
+        margin-top: 0;
+    }
 
     .image-topup {
         margin-top: 0;
