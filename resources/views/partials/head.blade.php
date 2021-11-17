@@ -27,6 +27,7 @@
 <link rel="stylesheet" type="text/css" href="https://tympanus.net/Development/LineHoverStyles/css/base.css" />
 <link rel="stylesheet" href="{{ asset('css/main.css') }}?v=5" />
 <link rel="stylesheet" href="{{ asset('css/navigation.css') }}?v=4" />
+<link rel="stylesheet" href="{{ asset('css/button.css') }}?v=6" />
 @stack('styles')
 <link rel="stylesheet" href="{{ asset('css/header.css') }}?v=4" />
 <link rel="stylesheet" href="{{ asset('css/footer.css') }}?v=4" />

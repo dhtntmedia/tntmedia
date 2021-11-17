@@ -70,6 +70,11 @@
                             </label>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button class="tnt-media-button">Send</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

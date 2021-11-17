@@ -26,11 +26,11 @@
 
 }
 
-#navigation .navbar-light a {
+.navbar-light a {
     color: #333333;
 }
 
-#navigation .navbar-dark a {
+.navbar-dark a {
     color: #FFFFFF;
 }
 
