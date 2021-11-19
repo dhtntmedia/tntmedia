@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+    <title>CodePen - pure CSS twinkling stars background</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <style>
+        @keyframes move-background {
+            from {
+                -webkit-transform: translate3d(0px, 0px, 0px);
+            }
+            to {
+                -webkit-transform: translate3d(1000px, 0px, 0px);
+            }
+        }
+        @-webkit-keyframes move-background {
+            from {
+                -webkit-transform: translate3d(0px, 0px, 0px);
+            }
+            to {
+                -webkit-transform: translate3d(1000px, 0px, 0px);
+            }
+        }
+        @-moz-keyframes move-background {
+            from {
+                -webkit-transform: translate3d(0px, 0px, 0px);
+            }
+            to {
+                -webkit-transform: translate3d(1000px, 0px, 0px);
+            }
+        }
+        @-webkit-keyframes move-background {
+            from {
+                -webkit-transform: translate3d(0px, 0px, 0px);
+            }
+            to {
+                -webkit-transform: translate3d(1000px, 0px, 0px);
+            }
+        }
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .stars {
+            background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: block;
+            z-index: 0;
+        }
+
+        .twinkling {
+            width: 10000px;
+            height: 100%;
+            background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+            background-size: 1000px 1000px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 2;
+            -moz-animation: move-background 70s linear infinite;
+            -ms-animation: move-background 70s linear infinite;
+            -o-animation: move-background 70s linear infinite;
+            -webkit-animation: move-background 70s linear infinite;
+            animation: move-background 70s linear infinite;
+        }
+
+        .clouds {
+            width: 10000px;
+            height: 100%;
+            background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+            background-size: 1000px 1000px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: none;
+            bottom: 0;
+            z-index: 4;
+            -moz-animation: move-background 150s linear infinite;
+            -ms-animation: move-background 150s linear infinite;
+            -o-animation: move-background 150s linear infinite;
+            -webkit-animation: move-background 150s linear infinite;
+            animation: move-background 150s linear infinite;
+        }
+        .moon {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: #222;
+            position: relative;
+            z-index: 5;
+            right: -90px;
+            top: 40px;
+            overflow: hidden;
+        }
+        .moon-inner {
+            width: 290px;
+            height: 290px;
+            border-radius: 50%;
+            background: #999;
+            position: absolute;
+            margin-left: 20px;
+            margin-top: 5px;
+            z-index: 3;
+            overflow: hidden;
+        }
+
+        img {
+            height: 70vh;
+            width: 70vh;
+            position: absolute;
+            z-index: 3;
+            right: 20px;
+        }
+    </style>
+</head>
+<body translate="no">
+<div class="background-container">
+    <div class="moon">
+        <div class="moon-inner"></div>
+    </div>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+    <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
+</div></body></html>

@@ -36,6 +36,13 @@
             <?php } else { ?>
             @include('partials.home.block-day')
             <?php } ?>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 @stop

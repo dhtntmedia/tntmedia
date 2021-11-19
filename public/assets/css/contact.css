@@ -11,8 +11,12 @@ html,
 body {
     height: 100%;
 }
+.tnt-media-contact-form {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
 #tnt-contact-form {
-    margin-top: 180px;
+    margin-top: 98px;
 }
 #tnt-contact-form .inp {
     position: relative;
