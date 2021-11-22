@@ -43,3 +43,6 @@ Route::get('/chmod', function() {
     $output = shell_exec('sudo chmod -R 775 ~/var/www/html/tntmedia/resources');
     return "Chmoded";
 });
+
+Route::get('/facebook/rotate', [HomeController::class, 'facebookRotate']);
+

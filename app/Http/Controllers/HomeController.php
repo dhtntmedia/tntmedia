@@ -150,6 +150,13 @@ class HomeController extends Controller
         }
     }
 
+    public function facebookRotate()
+    {
+        return view('home.facebook-rotate')->with('data', [
+            'image' => 'https://www.unoosa.org/res/timeline/index_html/space-2.jpg'
+        ]);
+    }
+
     public function keywordText()
     {
         $text = [
