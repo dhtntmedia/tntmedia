@@ -9,6 +9,7 @@ use App\Http\Controllers\DisclaimerController;
 use App\Http\Controllers\WhoWeAreController;
 use App\Http\Controllers\WhatWeDoController;
 use App\Http\Controllers\JoinUsController;
+use App\Http\Controllers\Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,5 +45,5 @@ Route::get('/chmod', function() {
     return "Chmoded";
 });
 
-Route::get('/facebook/rotate', [HomeController::class, 'facebookRotate']);
+Route::any('{catchall}', [Controller::class, 'notfound'])->where('catchall', '.*');
 

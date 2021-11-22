@@ -19,4 +19,9 @@ class Controller extends BaseController
 //
 //        }
     }
+
+    public function notfound()
+    {
+        return view('errors.404');
+    }
 }
