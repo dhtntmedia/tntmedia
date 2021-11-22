@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1992afde-c7aa-4e3d-a75c-aec9ba0cfa05" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/christmas.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/final-design.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flying-in-space.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/full-moon.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/new-stars.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/accelerometer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoot-stars.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logo.html" beforeDir="false" afterPath="$PROJECT_DIR$/logo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/contact.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/contact/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/christmas.html" beforeDir="false" afterPath="$PROJECT_DIR$/christmas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-design.html" beforeDir="false" afterPath="$PROJECT_DIR$/final-design.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new-stars.html" beforeDir="false" afterPath="$PROJECT_DIR$/new-stars.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/head.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +167,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="TEXT&#10;GitIgnore" />
+    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="HTML&#10;TEXT&#10;GitIgnore" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts/home" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -229,7 +220,10 @@
       <workItem from="1635181603418" duration="10761000" />
       <workItem from="1637074062310" duration="9024000" />
       <workItem from="1637162426740" duration="7295000" />
-      <workItem from="1637188288601" duration="6158000" />
+      <workItem from="1637188288601" duration="6274000" />
+      <workItem from="1637338921752" duration="2098000" />
+      <workItem from="1637400192266" duration="192000" />
+      <workItem from="1637601581743" duration="171000" />
     </task>
     <servers />
   </component>
