@@ -17,15 +17,6 @@ fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 </script>
 
-@include('partials.navigation')
-
-<div id="tnt-content">
-    @include('partials.menu')
-    @yield('content')
-</div>
-
-@include('partials.footer')
-
 <!-- Messenger Chat plugin Code -->
 <div id="fb-root"></div>
 
@@ -53,6 +44,15 @@ fjs.parentNode.insertBefore(js, fjs);
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
+
+@include('partials.navigation')
+
+<div id="tnt-content">
+    @include('partials.menu')
+    @yield('content')
+</div>
+
+@include('partials.footer')
 
 <script type="text/javascript" src="{{ asset('js/main.js') }}?v=4"></script>
 
