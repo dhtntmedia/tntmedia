@@ -22,6 +22,6 @@ class Controller extends BaseController
 
     public function notfound()
     {
-        return view('errors.404');
+        return view('error.404');
     }
 }
