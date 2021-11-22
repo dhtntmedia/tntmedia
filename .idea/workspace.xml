@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1992afde-c7aa-4e3d-a75c-aec9ba0cfa05" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/facebook-rotate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/facebook-rotate.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/head.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/home/facebook-rotate-head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/home/facebook-rotate-head.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/button.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/navigation.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +221,7 @@
       <workItem from="1637188288601" duration="6274000" />
       <workItem from="1637338921752" duration="2098000" />
       <workItem from="1637400192266" duration="192000" />
-      <workItem from="1637601581743" duration="1331000" />
+      <workItem from="1637601581743" duration="1643000" />
     </task>
     <servers />
   </component>

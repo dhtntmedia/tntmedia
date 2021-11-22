@@ -14,6 +14,11 @@
                             </a>
                         </li>
                         <li class="icon-item">
+                            <a href="https://twitter.com/weareTNTMedia" class="icon-link tnt-twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="icon-item">
                             <a href="https://facebook.com/tntmedialtd" class="icon-link tnt-facebook">
                                 <i class="fa fa-facebook"></i>
                             </a>
