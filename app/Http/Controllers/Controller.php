@@ -22,6 +22,9 @@ class Controller extends BaseController
 
     public function notfound()
     {
-        return view('error.404');
+        $data = [
+            'title' => '404 page'
+        ];
+        return view('error.404')->with('data', $data);
     }
 }
