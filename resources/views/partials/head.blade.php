@@ -40,16 +40,6 @@
     gtag('js', new Date());
     gtag('config', 'UA-209212263-1');
 </script>
-
-<script type="text/javascript">
-    var cpm = {};
-    (function(h,u,b){
-        var d=h.getElementsByTagName("script")[0],e=h.createElement("script");
-        e.async=true;e.src='https://cookiehub.net/c2/f916896c.js';
-        e.onload=function(){u.cookiehub.load(b);}
-        d.parentNode.insertBefore(e,d);
-    })(document,window,cpm);
-</script>
 <!-- Facebook Pixel Code -->
 <script>
     !function(f,b,e,v,n,t,s)
