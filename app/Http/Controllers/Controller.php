@@ -24,7 +24,8 @@ class Controller extends BaseController
     {
         $data = [
             'title' => '404 page',
-            'description' => 'Page not found. Served 404 page.'
+            'description' => 'Page not found. Served 404 page.',
+            'keywords' => ''
         ];
         return view('error.404')->with('data', $data);
     }
