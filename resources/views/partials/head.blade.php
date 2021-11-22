@@ -14,7 +14,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta property="og:url" content="https://www.tntmedia.co.uk/" />
-<meta property="og:image" content="https://www.tntmedia.co.uk/public/assets/images/TNT-media-gallexy.png" />
+<meta property="og:image" content="https://www.tntmedia.co.uk/facebook/rotate" />
 <meta content="{{ $data['title'] }}" property="twitter:title" />
 <meta content="{{ $data['description'] }}"
       property="twitter:description" />

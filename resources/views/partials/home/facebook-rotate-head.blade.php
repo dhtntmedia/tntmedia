@@ -1,5 +1,5 @@
 <meta charset="utf-8" />
-<title>Tautological News and Technology</title>
+<title>Tautological News and Technology | Facebook Rotate</title>
 <link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}?v=3">
 <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}?v=3">
 <meta name="title" content="Tautological News and Technology">
@@ -7,7 +7,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="language" content="English">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta property="og:url" content="https://www.tntmedia.co.uk/" />
+<meta property="og:title" content="Facebook Rotate" />
+<meta property="og:url" content="https://www.tntmedia.co.uk/facebook/rotate" />
 <meta property="og:image" content="{{ $data['image'] }}" />
 <meta property="og:type" content="image" />
 
