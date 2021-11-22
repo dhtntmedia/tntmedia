@@ -9,17 +9,17 @@
                 <section>
                     <ul class="tnt-media-social">
                         <li class="icon-item">
-                            <a href="https://instagram.com/wearetntmedia" class="icon-link tnt-instagram">
+                            <a href="https://instagram.com/wearetntmedia" class="icon-link tnt-instagram" target="_blank" rel="noopener noreferrer">
                                 <i class="fa fa-instagram"></i>
                             </a>
                         </li>
                         <li class="icon-item">
-                            <a href="https://twitter.com/weareTNTMedia" class="icon-link tnt-twitter">
+                            <a href="https://twitter.com/weareTNTMedia" class="icon-link tnt-twitter" target="_blank" rel="noopener noreferrer">
                                 <i class="fa fa-twitter"></i>
                             </a>
                         </li>
                         <li class="icon-item">
-                            <a href="https://facebook.com/tntmedialtd" class="icon-link tnt-facebook">
+                            <a href="https://facebook.com/tntmedialtd" class="icon-link tnt-facebook" target="_blank" rel="noopener noreferrer">
                                 <i class="fa fa-facebook"></i>
                             </a>
                         </li>
