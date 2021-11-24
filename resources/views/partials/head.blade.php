@@ -13,12 +13,17 @@
 <meta name="author" content="{{ $data['title'] }}">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta property="og:url" content="https://www.tntmedia.co.uk/" />
-<meta property="og:image" content="https://www.tntmedia.co.uk/facebook/rotate" />
-<meta content="{{ $data['title'] }}" property="twitter:title" />
-<meta content="{{ $data['description'] }}"
-      property="twitter:description" />
+
+{{--Twitter Meta--}}
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@weareTNTMedia" />
+<meta name="twitter:creator" content="@dannychatham" />
+<meta property="og:url" content="https://www.tntmedia.co.uk" />
+<meta property="og:title" content="{{ $data['title'] }}" />
+<meta property="og:description" content="{{ $data['description'] }}" />
+<meta property="og:image" content="{{ asset('images/banner.jpg') }}" />
 <meta property="og:type" content="desktop" />
+{{--Twitter Meta--}}
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
