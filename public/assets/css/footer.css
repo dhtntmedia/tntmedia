@@ -1,6 +1,12 @@
 #footer {
-    margin-top: 80px;
     padding-bottom: 20px;
+    background-color: #333;
+    background: linear-gradient(#000000, #333);
+    padding-top: 80px;
+    color: #fff !important;
+}
+#footer .info-inline, #footer .item, #footer li, #footer button {
+    color: #fff !important;
 }
 
 #footer footer .row:first-child {

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+    <meta charset="UTF-8">
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+    <title>CodePen - staggered text on scroll</title>
+
+
+
+
+    <style>
+        @font-face {
+            font-family: "Bandeins Sans & Strange Variable";
+            src: url("https://res.cloudinary.com/dldmpwpcp/raw/upload/v1566406079/BandeinsStrangeVariable_esetvq.ttf");
+        }
+        @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+
+        body {
+            background-color: #500472;
+            padding: 0;
+            height: 300vh;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            font-family: "Nunito", sans-serif;
+        }
+
+        h1 {
+            font-family: "Bandeins Sans & Strange Variable";
+            font-size: 205px;
+            font-variation-settings: "wdth" 400;
+            color: #f78f82;
+            margin: 0;
+            padding: 0;
+            line-height: 95px;
+        }
+
+        .container div {
+            height: 150px;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+
+        .scene {
+            transform-style: preserve-3d;
+            opacity: 0
+        }
+
+        .container {
+            height: 150px;
+            width: 600px;
+            padding: 0;
+            margin: 0;
+            perspective 500px;
+            overflow: hidden;
+        }
+
+        .container:nth-child(1) {
+            transform: rotateX(-24deg) rotateY(-50deg) rotateX(90deg) translate3d(299px, 0.5px, 0) scaleY(1.71);
+        }
+        .container:nth-child(2) {
+            transform: rotateX(-24deg) rotateY(-50deg) rotateX(0deg) translate3d(145px, 0, 0) scaleY(1);
+        }
+        .container:nth-child(3) {
+            transform: rotateX(-24deg) rotateY(-50deg) rotateX(90deg) translate3d(-9px, -1.5px, 0) scaleY(1.7);
+        }
+        .container:nth-child(4) {
+            transform: rotateX(-24deg) rotateY(-50deg) rotateX(0deg) translate3d(-163px, 0, -3px) scaleY(1);
+        }
+
+        .container:nth-child(even) {
+            opacity: 0.8
+        }
+
+        /* SCROLL DOWN */
+        .scroll-down {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            color: white;
+            font-weight: 400;
+            font-size: 14px;
+            overflow: visible;
+        }
+
+        .scroll-down .arrow {
+            position: relative;
+            top: 0px;
+            margin: 0 auto;
+            width: 15px;
+            height: 15px;
+            filter: invert(1);
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KPHBhdGggZmlsbD0iYmxhY2siIGQ9Ik00ODMuMiwxOTIuMmMtMjAuNS0yMC41LTUzLjUtMjAuOC03My43LTAuNkwyNTcsMzQ0LjFMMTA0LjUsMTkxLjZjLTIwLjItMjAuMi01My4yLTE5LjktNzMuNywwLjYKCWMtMjAuNSwyMC41LTIwLjgsNTMuNS0wLjYsNzMuN2wxOTAsMTkwYzEwLjEsMTAuMSwyMy40LDE1LjEsMzYuOCwxNWMxMy4zLDAuMSwyNi43LTQuOSwzNi44LTE1bDE5MC0xOTAKCUM1MDMuOSwyNDUuNyw1MDMuNywyMTIuNyw0ODMuMiwxOTIuMnoiLz4KPC9zdmc+);
+            background-size: contain;
+        }
+    </style>
+
+
+
+
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+
+
+</head>
+
+<body translate="no" style="">
+<div class="pin-spacer" style="place-self: auto; grid-area: auto / auto / auto / auto; z-index: auto; float: none; flex-shrink: 1; display: block; margin: 0px; inset: auto; position: relative; overflow: visible; box-sizing: border-box; width: 600px; height: 600px; padding: 0px;"><div class="scene" style="opacity: 1; transform: translate(0px, 0px); left: 8px; top: 8.001px; margin: 0px; max-width: 600px; width: 600px; max-height: 600px; height: 600px; padding: 0px; box-sizing: border-box; position: fixed;">
+    <div class="container">
+        <h1 class="one" style="transform: translate3d(0px, 80.0914px, 0px);">woo</h1>
+    </div>
+    <div class="container">
+        <h1 class="two" style="transform: translate3d(0px, -69.9086px, 0px);">woo</h1>
+    </div>
+    <div class="container">
+        <h1 class="three" style="transform: translate(0px, -150px);">woo</h1>
+    </div>
+    <div class="container">
+        <h1 class="four" style="transform: translate(0px, -150px);">woo</h1>
+    </div>
+</div></div>
+
+<div class="scroll-down">scroll down<div class="arrow" style="transform: translate3d(0px, 4.8746px, 0px);"></div>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+    <script src="https://assets.codepen.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script id="rendered-js">
+        gsap.registerPlugin(ScrollTrigger);
+
+        let duration = 1;
+
+        gsap.set("h1", {
+            y: -150 });
+
+
+        gsap.set(".scene", {
+            opacity: 1 });
+
+
+        ScrollTrigger.create({
+            start: 0,
+            end: "max",
+            pin: ".scene" });
+
+
+        gsap.to("h1", {
+            scrollTrigger: {
+                start: "top 90%",
+                end: "max",
+                scrub: 1 },
+
+            y: 150,
+            ease: "none",
+            duration: duration,
+            stagger: duration * 0.5 });
+
+
+        gsap.to(".arrow", { y: 5, ease: "power1.inOut", repeat: -1, yoyo: true });
+        //# sourceURL=pen.js
+    </script>
+
+
+
+    <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
+
+
+
+
+</div></body></html>

@@ -11,34 +11,6 @@ use App\Services\SunsetService;
 class HomeController extends Controller
 {
     /**
-     * Pre launch day landing launch page.
-     */
-    public function comingSoon()
-    {
-        $subs = [
-            'Digital agency',
-            'Tech firm'
-        ];
-        $title = env("APPLICATION_NAME") . $this->getSubtitles($subs, 'title');
-        $agent = new Agent();
-        $keyWords = $this->getKeywords($subs);
-
-        $data = [
-            'title' => $title,
-            'keyword' => ucwords($keyWords),
-            'description' => 'We are a UK based company. We work with clients all over the world to help them
-             connect with their audiences through all forms of digital media.'
-        ];
-
-        if ( $agent->isMobile() ) {
-
-            return view('home.mobile-coming-soon')->with('data', $data);
-        } else {
-
-            return view('home.web-coming-soon')->with('data', $data);
-        }
-    }
-    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response

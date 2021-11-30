@@ -46,4 +46,11 @@ Route::get('/chmod', function() {
 });
 
 Route::any('{catchall}', [Controller::class, 'notfound'])->where('catchall', '.*');
+Route::get('/sitemap.xml', 'SitemapController@index');
+Route::group(['prefix' => 'sitemap'], function () {
+    Route::get('albums.xml', ['as' => 'sitemap.albums', 'uses' => 'SitemapController@albums']);
+    Route::get('images.xml', ['as' => 'sitemap.images', 'uses' => 'SitemapController@images']);
+    Route::get('users.xml', ['as' => 'sitemap.users', 'uses' => 'SitemapController@users']);
+    Route::get('tags.xml', ['as' => 'sitemap.tags', 'uses' => 'SitemapController@tags']);
+});
 

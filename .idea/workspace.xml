@@ -2,8 +2,149 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1992afde-c7aa-4e3d-a75c-aec9ba0cfa05" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/404-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advert.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SitemapController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/art-gallery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/call-to-action.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/childrens-book.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/christmas-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colour-picker.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/container-glass.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cookie-policy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creative-eye.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creative-floating-water.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creative-game-room.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creative-globe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creative-hogwarts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creative-jellyfish.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creative-plane.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creative-swirling.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creative-time-weather.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creative-valentines.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creative-window.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cv-builder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day-night-house.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desktop-new-reader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dropdown.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eclipes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-delivery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/footer-waves.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game-chess.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game-snake.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/header-welcome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hover-button.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image-zoom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/joy-stick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-sign-language.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-to-touch-type.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/light-beam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/magazine.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/matrix.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/menu-mobile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/menus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile-helpers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moving-lines.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nasa.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/new-reader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/night-switch.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pdf-news.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/button.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/clock.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/day-night.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/delete.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/like.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/menu.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/nav-link.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/publish.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/social.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/sumbit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/head.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/home/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/partials/contact-form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/partials/home/banner.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/partials/home/terminal-banner.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scroll-logo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scroll.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/send.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sleep-easy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slider.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snow-mist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/social-media.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid-games.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs-4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terminal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/the-matrix.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/water-waves.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/head.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-design.html" beforeDir="false" afterPath="$PROJECT_DIR$/final-design.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/navigation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/clouds.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/coming-soon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/navigation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/stars.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/stars.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/stars.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/stars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/disclaimer/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/error/404.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/facebook-rotate.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/join-us/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/join-us/role.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/join-us/talent-application.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/join-us/thank-you.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home/facebook-rotate.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home/home.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/news/home/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/news/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/news/news.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/footer.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/head.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/header.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/home/block-day.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/home/block-night.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/home/facebook-rotate-head.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/home/header-day.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/home/header-night.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/home/header.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/home/sign-up.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/menu.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navigation.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/news/home/content-block-five.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/news/home/content-block-four.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/news/home/content-block-one.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/news/home/content-block-seven.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/news/home/content-block-six.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/social-button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/news/home/content-block-three.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/news/home/content-block-two.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/news/home/main-block-one.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/news/home/main-block-two.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/style.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/privacy/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/what-we-do/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/who-we-are/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Console/ControllerMakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Console/ControllerMakeCommand.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +362,9 @@
       <workItem from="1637338921752" duration="2098000" />
       <workItem from="1637400192266" duration="192000" />
       <workItem from="1637601581743" duration="4857000" />
-      <workItem from="1637661731077" duration="698000" />
+      <workItem from="1637661731077" duration="43440000" />
+      <workItem from="1637997436614" duration="594000" />
+      <workItem from="1638113039542" duration="15394000" />
     </task>
     <servers />
   </component>

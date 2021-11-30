@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+    <meta charset="UTF-8">
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+    <title>CodePen - Flip for GSAP</title>
+    <link href="//fonts.googleapis.com/css?family=Signika+Negative:300,400,600" rel="stylesheet" type="text/css">
+
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: black;
+            padding: 0;
+            margin: 0;
+            font-family: "Signika Negative", sans-serif, Arial;
+            font-weight: 300;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .container.grid, .container.columns {
+            align-content: stretch;
+            align-items: stretch;
+            flex-wrap: wrap;
+        }
+
+        .letter {
+            text-align: center;
+            color: black;
+            font-size: 10vmax;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px 6px;
+        }
+        .container.grid .letter {
+            flex-basis: 50%;
+        }
+        .container.columns .letter {
+            flex-basis: 25%;
+        }
+        .for, .gsap {
+            font-size: 5vmax;
+            color: white;
+        }
+        .for {
+            padding: 2px 1.6vmax;
+            font-weight: 300;
+            display: none;
+        }
+        .gsap {
+            padding: 2px 0;
+            font-weight: 600;
+            display: none;
+        }
+        .container.final .for, .container.final .gsap {
+            display: block;
+        }
+        .F {
+            background: rgba(0, 188, 212, 0.7);
+        }
+        .l {
+            background: rgba(40, 150, 255, 0.7);
+        }
+        .i {
+            background: rgba(153, 80, 220, 0.7);
+        }
+        .p {
+            background: rgba(90, 108, 225, 0.7);
+        }
+        .container.plain .letter {
+            background: transparent;
+            color: white;
+            padding: 0;
+        }
+
+        .logo {
+            position: fixed;
+            width: 60px;
+            bottom: 20px;
+            right: 30px;
+        }
+    </style>
+
+    <script>
+        window.console = window.console || function(t) {};
+    </script>
+
+
+
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+
+
+</head>
+
+<body translate="no">
+<div class="container grid">
+    <div class="letter F" data-flip-id="auto-1" style="position: absolute; width: 286.804px; height: 495.73px; top: 0px; left: 0px; transform: translate3d(0px, 0px, 0px); background-color: rgba(0, 188, 212, 0.7); color: rgb(0, 0, 0);">F</div>
+    <div class="letter l" data-flip-id="auto-2" style="position: absolute; width: 248.115px; height: 549.05px; top: 0px; left: 0px; transform: translate3d(248.115px, 0px, 0px); background-color: rgba(40, 150, 255, 0.7); color: rgb(0, 0, 0);">l</div>
+    <div class="letter i" data-flip-id="auto-3" style="position: absolute; width: 226.789px; height: 578.441px; top: 0px; left: 0px; transform: translate3d(408.421px, 15.5587px, 0px); background-color: rgba(153, 80, 220, 0.7); color: rgb(0, 0, 0);">i</div>
+    <div class="letter p" data-flip-id="auto-4" style="position: absolute; width: 217.655px; height: 591.03px; top: 0px; left: 0px; transform: translate3d(644.345px, 2.9696px, 0px); background-color: rgba(90, 108, 225, 0.7); color: rgb(0, 0, 0);">p</div>
+    <div class="for" data-flip-id="auto-5" style="">for</div>
+    <div class="gsap" data-flip-id="auto-6" style="">GSAP</div>
+</div>
+
+
+
+
+
+
+<a href="https://greensock.com/"><img src="https://assets.codepen.io/16327/hero-logo.svg" class="logo"></a>
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+<script src="https://assets.codepen.io/16327/gsap-latest-beta.min.js"></script>
+<script src="https://assets.codepen.io/16327/Flip.min.js"></script>
+<script id="rendered-js">
+    gsap.registerPlugin(Flip);
+
+    let layouts = ["final", "plain", "columns", "grid"],
+        container = document.querySelector(".container"),
+        curLayout = 0; // index of the current layout
+
+    function nextState() {
+        const state = Flip.getState(".letter, .for, .gsap", { props: "color,backgroundColor", simple: true }); // capture current state
+
+        container.classList.remove(layouts[curLayout]); // remove old class
+        curLayout = (curLayout + 1) % layouts.length; // increment (loop back to the start if at the end)
+        container.classList.add(layouts[curLayout]); // add the new class
+
+        Flip.from(state, { // animate from the previous state
+            absolute: true,
+            stagger: 0.07,
+            duration: 0.7,
+            ease: "power2.inOut",
+            spin: curLayout === 0, // only spin when going to the "final" layout
+            simple: true,
+            onEnter: (elements, animation) => gsap.fromTo(elements, { opacity: 0 }, { opacity: 1, delay: animation.duration() - 0.1 }),
+            onLeave: elements => gsap.to(elements, { opacity: 0 }) });
+
+
+        gsap.delayedCall(curLayout === 0 ? 3.5 : 1.5, nextState);
+    }
+
+    gsap.delayedCall(1, nextState);
+    //# sourceURL=pen.js
+</script>
+
+
+
+
+
+
+
+</body></html>

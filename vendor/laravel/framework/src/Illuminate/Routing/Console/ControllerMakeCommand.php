@@ -277,4 +277,25 @@ class ControllerMakeCommand extends GeneratorCommand
             ['requests', 'R', InputOption::VALUE_NONE, 'Generate FormRequest classes for store and update.'],
         ];
     }
+
+    protected function createRelativeRelatedFilesFolder()
+    {
+        $path = $this->laravel->basePath(trim($stub, '/'));
+
+        if (!file_exists($path . 'public/css/')) {
+            mkdir($path . 'public/css/', 0777, true);
+        }
+
+        if (!file_exists($path . 'resources/views/')) {
+            mkdir($path . 'resources/views/', 0777, true);
+        }
+
+        if (!file_exists($path . 'resources/views/layouts/')) {
+            mkdir($path . 'resources/views/layouts/', 0777, true);
+        }
+
+        if (!file_exists($path . 'resources/views/partials/')) {
+            mkdir($path . 'resources/views/partials/', 0777, true);
+        }
+    }
 }

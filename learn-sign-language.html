@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+  <meta name="apple-mobile-web-app-title" content="CodePen">
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+  <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+  <title>CodePen - hand </title>
+  <meta charset="utf-8">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.5/control_utils.css" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="demo.css" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.5/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.3/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.1/hands.js" crossorigin="anonymous"></script>
+
+
+
+
+
+  <style>
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .abs {
+      position: absolute;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    &:hover {
+       color: lightblue;
+     }
+    }
+
+    body {
+      bottom: 0;
+      font-family: 'Titillium Web', sans-serif;
+      color: white;
+      left: 0;
+      margin: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform-origin: 0px 0px;
+      overflow: hidden;
+    }
+
+    .container {
+      position: absolute;
+      background-color: #596e73;
+      width: 100%;
+      max-height: 100%;
+    }
+
+    .input_video {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    &.selfie {
+       transform: scale(-1, 1);
+     }
+    }
+
+    .input_image {
+      position: absolute;
+    }
+
+    .canvas-container {
+      display:flex;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      align-items:center;
+    }
+
+    .output_canvas {
+      max-width: 100%;
+      display: block;
+      position: relative;
+      left: 0;
+      top: 0;
+    }
+
+    .logo {
+      bottom: 10px;
+      right: 20px;
+
+    .title {
+      color: white;
+      font-size: 28px;
+    }
+
+    .subtitle {
+      position: relative;
+      color: white;
+      font-size: 10px;
+      left: -30px;
+      top: 20px;
+    }
+    }
+
+    .control-panel {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+    }
+
+    .loading {
+      display: flex;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      align-items: center;
+      backface-visibility: hidden;
+      justify-content: center;
+      opacity: 1;
+      transition: opacity 1s;
+
+    .message {
+      font-size: x-large;
+    }
+
+    .spinner {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      animation: spin 1s linear infinite;
+      border: 32px solid #bebebe;
+      border-top: 32px solid #3498db;
+      border-radius: 50%;
+    }
+    }
+
+    .loaded .loading {
+      opacity: 0;
+    }
+
+    .shoutout {
+      left: 0;
+      right: 0;
+      bottom: 40px;
+      text-align: center;
+      font-size: 24px;
+      position: absolute;
+    }
+  </style>
+
+  <script>
+    window.console = window.console || function(t) {};
+  </script>
+
+
+
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+
+
+</head>
+
+<body translate="no" class="loaded">
+<div class="container">
+  <video class="input_video selfie"></video>
+  <div class="canvas-container">
+    <canvas class="output_canvas" width="792" height="594">
+    </canvas></div>
+
+  <div class="loading" style="display: none;">
+    <div class="spinner"></div>
+    <div class="message">
+      Loading
+    </div>
+  </div>
+  <a class="abs logo" href="https://www.mediapipe.dev" target="_blank">
+    <div style="display: flex;align-items: center;bottom: 0;right: 10px;">
+      <img class="logo" src="logo_white.png" alt="" style="
+          height: 50px;">
+      <span class="title">Created by Daniel Harding</span>
+    </div>
+  </a>
+</div>
+<div class="control-panel">
+  <div class="control-panel"><div class="control-panel-entry control-panel-text">Daniels Hands</div><div class="control-panel-entry control-panel-fps"><canvas width="100" height="100"></canvas><div class="fps-text">7 fps</div><div class="fps-30">30</div><div class="fps-60">60</div></div><div class="control-panel-entry control-panel-toggle yes"><span class="label">Selfie Mode</span><span class="value">Yes</span></div><div class="control-panel-entry control-panel-source-picker" style="z-index: 2000;"><div class="source-selection"><div class="dropdown-wrapper"><div class="dropdown"><div class="dropdown-trigger"><span>FaceTime HD Camera (Built-in) (05ac:8509)</span><div class="arrow"></div></div><div class="dropdown-options"><span class="dropdown-option selected" data-value="FaceTime HD Camera (Built-in) (05ac:8509)">FaceTime HD Camera (Built-in) (05ac:8509)</span></div></div></div><input type="file" style="display: none;"><span class="file-selection"><div><img src="https://fonts.gstatic.com/s/i/googlematerialicons/file_upload/v8/white-24dp/1x/gm_file_upload_white_24dp.png"></div></span><div class="inputs"><video crossorigin="anonymous"></video><img crossorigin="anonymous"></div></div><div class="video-controls" style="display: none;"><img src="https://fonts.gstatic.com/s/i/googlematerialicons/pause/v8/white-24dp/1x/gm_pause_white_24dp.png"><div class="video-track"></div><div class="video-slider-ball" style="display: inline-block;"></div><span class="video-time">00:00</span></div></div><div class="control-panel-entry control-panel-slider"><span class="label">Max Number of Hands</span><span class="callout">2</span><input class="value" type="range" min="1" max="4" step="1"></div><div class="control-panel-entry control-panel-slider"><span class="label">Min Detection Confidence</span><span class="callout">0.01</span><input class="value" type="range" min="0" max="1" step="0.01"></div><div class="control-panel-entry control-panel-slider"><span class="label">Min Tracking Confidence</span><span class="callout">0.65</span><input class="value" type="range" min="0" max="1" step="0.01"></div></div></div>
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+
+<script id="rendered-js">
+  "use strict";
+  // Our input frames will come from here.
+  const videoElement = document.getElementsByClassName('input_video')[0];
+  const canvasElement = document.getElementsByClassName('output_canvas')[0];
+  const controlsElement = document.getElementsByClassName('control-panel')[0];
+  const canvasCtx = canvasElement.getContext('2d');
+  // We'll add this to our control panel later, but we'll save it here so we can
+  // call tick() each time the graph runs.
+  const fpsControl = new FPS();
+  // Optimization: Turn off animated spinner after its hiding animation is done.
+  const spinner = document.querySelector('.loading');
+  spinner.ontransitionend = () => {
+    spinner.style.display = 'none';
+  };
+  function onResults(results) {
+    // Hide the spinner.
+    document.body.classList.add('loaded');
+    // Update the frame rate.
+    fpsControl.tick();
+    // Draw the overlays.
+    canvasCtx.save();
+    canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height);
+    canvasCtx.drawImage(results.image, 0, 0, canvasElement.width, canvasElement.height);
+    if (results.multiHandLandmarks && results.multiHandedness) {
+      for (let index = 0; index < results.multiHandLandmarks.length; index++) {if (window.CP.shouldStopExecution(0)) break;
+        const classification = results.multiHandedness[index];
+        const isRightHand = classification.label === 'Right';
+        const landmarks = results.multiHandLandmarks[index];
+        drawConnectors(canvasCtx, landmarks, HAND_CONNECTIONS, { color: isRightHand ? '#00FF00' : '#FF0000' }),
+                drawLandmarks(canvasCtx, landmarks, {
+                  color: isRightHand ? '#00FF00' : '#FF0000',
+                  fillColor: isRightHand ? '#FF0000' : '#00FF00',
+                  radius: x => {
+                    return lerp(x.from.z, -0.15, .1, 10, 1);
+                  } });
+
+      }window.CP.exitedLoop(0);
+    }
+    canvasCtx.restore();
+  }
+  const hands = new Hands({ locateFile: file => {
+      return `https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.1/${file}`;
+    } });
+  hands.onResults(onResults);
+  // Present a control panel through which the user can manipulate the solution
+  // options.
+  new ControlPanel(controlsElement, {
+    selfieMode: true,
+    maxNumHands: 2,
+    minDetectionConfidence: 0.7,
+    minTrackingConfidence: 0.5 }).
+
+  add([
+    new StaticText({ title: 'Daniels Hands' }),
+    fpsControl,
+    new Toggle({ title: 'Selfie Mode', field: 'selfieMode' }),
+    new SourcePicker({
+      onSourceChanged: () => {
+        hands.reset();
+      },
+      onFrame: async (input, size) => {
+        const aspect = size.height / size.width;
+        let width, height;
+        if (window.innerWidth > window.innerHeight) {
+          height = window.innerHeight;
+          width = height / aspect;
+        } else
+        {
+          width = window.innerWidth;
+          height = width * aspect;
+        }
+        canvasElement.width = width;
+        canvasElement.height = height;
+        await hands.send({ image: input });
+      },
+      examples: {
+        videos: [],
+        images: [] } }),
+
+
+    new Slider({
+      title: 'Max Number of Hands',
+      field: 'maxNumHands',
+      range: [1, 4],
+      step: 1 }),
+
+    new Slider({
+      title: 'Min Detection Confidence',
+      field: 'minDetectionConfidence',
+      range: [0, 1],
+      step: 0.01 }),
+
+    new Slider({
+      title: 'Min Tracking Confidence',
+      field: 'minTrackingConfidence',
+      range: [0, 1],
+      step: 0.01 })]).
+
+
+  on(x => {
+    const options = x;
+    videoElement.classList.toggle('selfie', options.selfieMode);
+    hands.setOptions(options);
+  });
+  //# sourceURL=pen.js
+</script>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.1/hands_solution_packed_assets_loader.js" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.1/hands_solution_simd_wasm_bin.js" crossorigin="anonymous"></script></body></html>

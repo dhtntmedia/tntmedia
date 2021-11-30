@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+  <meta name="apple-mobile-web-app-title" content="CodePen">
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+  <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+  <title>CodePen - Minimal Colorpicker</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+
+
+  <style>
+    .colorpicker {
+      position: relative;
+      background: #000;
+      width: 240px;
+      padding-left: 8px;
+      box-shadow: 0 16px 32px -2px rgba(0, 0, 0, 0.24);
+    }
+    .colorpicker .hue {
+      width: 8px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      overflow: hidden;
+      transform: translate(-100%, 0);
+      background: linear-gradient(to bottom, red 0, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, red);
+    }
+    .colorpicker .hue .drag {
+      --y: 0;
+      width: 8px;
+      height: 12px;
+      top: 1px;
+      right: 0;
+      position: absolute;
+      transform: translate(0, var(--y));
+    }
+    .colorpicker .hue .drag:before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 6px 6px 0;
+      border-color: transparent #000 transparent transparent;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+    .colorpicker .field {
+      --backgroundHue: 150;
+      width: 100%;
+      padding-bottom: 112%;
+      position: relative;
+      background: hsl(var(--backgroundHue), 100%, 50%);
+    }
+    .colorpicker .field .fieldOverlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, transparent, #000), linear-gradient(to right, #fff, transparent);
+    }
+    .colorpicker .field .fieldOverlay .drag {
+      --x: 0;
+      --y: 0;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      left: -5px;
+      top: -5px;
+      border: 0.8px solid #fff;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+      transform: translate(var(--x), var(--y));
+    }
+    .colorpicker input {
+      background: none;
+      outline: none;
+      border: none;
+      font-family: inherit;
+      padding: 0;
+      display: table;
+      text-align: center;
+      width: 100%;
+      color: #fff;
+      font-size: 16px;
+      margin: 12px 0 0 0;
+    }
+    .colorpicker ul {
+      padding: 8% 16% 12% 16%;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+    }
+    .colorpicker ul li {
+      font-size: 12px;
+      text-align: center;
+      min-width: 30px;
+      color: rgba(255, 255, 255, 0.4);
+    }
+    .colorpicker ul li strong {
+      display: block;
+      color: #fff;
+      font-size: 14px;
+      margin: 0 0 4px 0;
+    }
+
+    html {
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    * {
+      box-sizing: inherit;
+    }
+    *:before, *:after {
+      box-sizing: inherit;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Roboto, Arial;
+      color: #ADAFB6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+    }
+    body .dribbble {
+      position: fixed;
+      display: block;
+      right: 20px;
+      bottom: 20px;
+      opacity: 0.5;
+      transition: all 0.4s ease;
+    }
+    body .dribbble:hover {
+      opacity: 1;
+    }
+    body .dribbble img {
+      display: block;
+      height: 36px;
+    }
+  </style>
+
+  <script>
+    window.console = window.console || function(t) {};
+  </script>
+
+
+
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+
+
+</head>
+
+<body translate="no">
+<div class="colorpicker"><div class="hue"><div class="drag" style="--y:0px;"></div></div><div class="field" style="--backgroundHue:0;"><div class="fieldOverlay"><div class="drag" style="--x:60px; --y:136px;"></div></div></div><input><ul><li><strong>122</strong>R</li><li><strong>90</strong>G</li><li><strong>90</strong>B</li></ul></div>
+
+<!-- dribbble -->
+<a class="dribbble" href="https://dribbble.com/shots/5097347-Minimal-Colorpicker-CSS-JS" target="_blank"><img src="https://cdn.dribbble.com/assets/dribbble-ball-1col-dnld-e29e0436f93d2f9c430fde5f3da66f94493fdca66351408ab0f96e2ec518ab17.png" alt=""></a>
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.1/tinycolor.min.js"></script>
+<script id="rendered-js">
+  $(document).ready(function () {
+    $('.colorpicker').minimalColorpicker({
+      color: '#4513e9',
+      onUpdateColor: function (e, color) {
+        console.log(color);
+      } });
+
+  });
+
+  jQuery.fn.minimalColorpicker = function (options) {
+
+    var defaults = {
+      color: '#000000' };
+
+
+    var settings = $.extend({}, defaults, options);
+
+    return this.each(function () {
+      var self = $(this);
+      var hue = $('<div />').addClass('hue');
+      var hueDrag = $('<div />').addClass('drag');
+      var field = $('<div />').addClass('field');
+      var fieldOverlay = $('<div />').addClass('fieldOverlay');
+      var fieldDrag = $('<div />').addClass('drag');
+      var input = $('<input />').val('#ffffff');
+      var rgbList = $('<ul />');
+      rgbList.append($('<li />').html('<strong>255</strong>R'));
+      rgbList.append($('<li />').html('<strong>255</strong>G'));
+      rgbList.append($('<li />').html('<strong>255</strong>B'));
+
+      if (tinycolor(settings.color).isValid()) {
+        self.color = tinycolor(settings.color).toHsl();
+      }
+
+      if (tinycolor(self.data('color')).isValid()) {
+        self.color = tinycolor(self.data('color')).toHsl();
+      }
+
+      hue.append(hueDrag);
+      self.append(hue);
+      fieldOverlay.append(fieldDrag);
+      field.append(fieldOverlay);
+      self.append(field);
+      self.append(input);
+      self.append(rgbList);
+
+      self.hue = hue.get(0);
+      self.hue.drag = hueDrag.get(0);
+
+      self.fieldBase = field.get(0);
+      self.field = fieldOverlay.get(0);
+      self.field.drag = fieldDrag.get(0);
+
+      self.updateHue = function (e) {
+        self.setHue(e.offsetY / hue.outerHeight() * 360);
+        if (self.hue.onmousemove === null) {
+          self.hue.onmousemove = function (e) {
+            if (e.target === self.hue) {
+              self.setHue(e.offsetY / hue.outerHeight() * 360);
+              e.stopPropagation();
+            }
+          };
+        }
+        self.clearMousemove('hue');
+      };
+
+      self.updateColor = function (e) {
+        self.setColorPos(e.offsetX, e.offsetY);
+        if (self.field.onmousemove === null) {
+          self.field.onmousemove = function (e) {
+            if (e.target === self.field) {
+              self.setColorPos(e.offsetX, e.offsetY);
+              e.stopPropagation();
+            }
+          };
+        }
+        self.clearMousemove('field');
+      };
+
+      self.setColorPos = function (x, y) {
+        self.field.drag.style.setProperty('--x', x);
+        self.field.drag.style.setProperty('--y', y);
+        self.color = tinycolor({
+          h: self.color.h,
+          s: x / (field.outerWidth() - 1) * 100,
+          v: (1 - y / (field.outerHeight() - 1)) * 100 }).
+        toHsl();
+        self.setColor();
+      };
+
+      self.setHue = function (a) {
+        self.color.h = a;
+        self.setColor();
+      };
+
+      self.setColor = function (e) {
+        var c = tinycolor(self.color);
+        chsv = c.toHsv();
+        c = c.toHslString();
+        self.field.drag.style.setProperty('--x', Math.round(chsv.s * (field.outerWidth() - 1)) + 'px');
+        self.field.drag.style.setProperty('--y', Math.round((1 - chsv.v) * field.outerHeight()) + 'px');
+        self.hue.drag.style.setProperty('--y', self.color.h / 360 * hue.outerHeight() + 'px');
+        self.fieldBase.style.setProperty('--backgroundHue', self.color.h);
+        if (options.onUpdateColor !== undefined) {
+          options.onUpdateColor(e, {
+            hex: tinycolor(self.color).toHex(),
+            rgb: tinycolor(self.color).toRgb(),
+            rgbString: tinycolor(self.color).toRgbString() });
+
+        }
+        self.setOutput();
+      };
+
+      self.setOutput = function (e) {
+        input.val('#' + tinycolor(self.color).toHex());
+        rgbList.find('li:nth-child(1) strong').text(tinycolor(self.color).toRgb().r);
+        rgbList.find('li:nth-child(2) strong').text(tinycolor(self.color).toRgb().g);
+        rgbList.find('li:nth-child(3) strong').text(tinycolor(self.color).toRgb().b);
+      };
+
+      self.updateOutput = function (e) {
+        if (input.val().length == 7 && tinycolor(input.val()).isValid()) {
+          var c = tinycolor(input.val());
+          self.color = c.toHsl();
+          self.setColorPos(Math.round(c.toHsv().s * (field.outerWidth() - 1)), Math.round((1 - c.toHsv().v) * field.outerHeight()));
+          self.setColor();
+          self.setOutput();
+        }
+      };
+
+      self.clearMousemove = function (m) {
+        if (document.onmouseup === null) {
+          document.onmouseup = function (e) {
+            self[m].onmousemove = null;
+            document.onmouseup = null;
+          };
+        }
+      };
+
+      input.on('change keyup', self.updateOutput);
+      field.on('mousedown', self.updateColor);
+      hue.on('mousedown', self.updateHue);
+
+      self.setColor();
+      self.setHue(self.color.h);
+      self.setOutput();
+
+    });
+
+  };
+  //# sourceURL=pen.js
+</script>
+
+
+
+
+
+
+
+</body></html>

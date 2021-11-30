@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - A Pen by Josh</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+        @import url(https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700,900);
+        @import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
+
+        .centered {
+            padding: 0px 50px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .headerLink {
+            color: black;
+            text-decoration: none;
+        }
+
+        .pageTitle {
+            font-family: 'Playfair Display SC', serif;
+            text-transform: uppercase;
+            font-size: 88px;
+            margin: 0;
+            line-height: 1;
+            display:block;
+            text-align:center;
+            white-space: nowrap;
+        }
+
+        .nav {
+            display:block;
+            border:none;
+            border-top:2px solid black;
+            border-bottom:2px solid black;
+            font-size: 0; /* Fighting the space between inline-block elements */
+            position:relative;
+        }
+        .nav ul {
+            list-style:none;
+            padding:0;
+            margin:0;
+            display:inline-block;
+        }
+        .nav ul li {
+            display:inline-block;
+        }
+        .nav ul li a {
+            font-family: 'Lato', sans-serif;
+            display:inline-block;
+            padding:16px 12px;
+            color:black;
+            text-decoration:none;
+            font-weight:400;
+            font-size:16px;
+        }
+        .nav ul li a:hover {
+            background:black;
+            color:white;
+        }
+
+        .search {
+            position:absolute;
+            top:0px;
+            right:0px;
+        }
+        .searchButton {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border:none;
+            background:transparent;
+            display:inline-block;
+            width:51px;
+            height:51px;
+            outline:none;
+            cursor:pointer;
+            color:transparent;
+        }
+        .searchButton::after {
+            display:block;
+            content:' ';
+            width:14px;
+            height:14px;
+            position:absolute;
+            top:14px;
+            right:20px;
+            border:2px solid black;
+            border-radius:999px;
+        }
+        .searchButton::before {
+            display:block;
+            content:' ';
+            width:2px;
+            height:12px;
+            position:absolute;
+            top:28px;
+            right:18px;
+            border-right:2px solid black;
+            -ms-transform: rotate(-45deg); /* IE 9 */
+            -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+            transform: rotate(-45deg);
+        }
+        .searchButton:hover {
+            background:black;
+        }
+        .searchButton:hover::after {
+            border-color:white;
+        }
+        .searchButton:hover::before {
+            border-right-color:white;
+        }
+        .searchInput {
+            position:absolute;
+            top:0px;
+            right:51px;
+            height:49px;
+            text-align:right;
+            padding-right:10px;
+            border:none;
+            outline:none;
+            font-size:16px;
+            font-family: 'Lato', sans-serif;
+            background:transparent;
+        }
+        .main {
+            margin-top:20px;
+        }
+        .columns {
+            -moz-column-count:3;
+            -moz-column-gap: 3%;
+            -moz-column-width: 30%;
+            -webkit-column-count:3;
+            -webkit-column-gap: 3%;
+            -webkit-column-width: 30%;
+            column-count: 3;
+            column-gap: 3%;
+            column-width: 30%;
+        }
+        .post {
+            display: inline-block;
+            column-break-inside: avoid;
+            font-family: 'Merriweather', serif;
+            margin-bottom:20px;
+        }
+        .postHeader h4 {
+            margin:0;
+        }
+        .postContent, .postContent * {
+            text-align:justify;
+            font-size:13px;
+            margin:0;
+        }
+    </style>
+</head>
+
+<body translate="no">
+<div class="centered">
+    <header>
+        <a href="#" class="headerLink">
+            <h1 class="pageTitle" id="pageTitle" style="font-size: 105.07px;">The Dabbler</h1>
+        </a>
+        <nav role="navigation" class="nav">
+            <ul>
+                <li><a href="#">All</a></li>
+                <li><a href="#">Science</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">World News</a></li>
+            </ul>
+            <ul class="search">
+                <li>
+                    <input type="text" class="searchInput" placeholder="Search here...">
+                    <button type="submit" class="searchButton"></button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main" class="main columns">
+        <article class="post">
+            <div class="postHeader">
+                <h4>Astronomical Tomatoes Plotting to Invade Indian Ocean</h4>
+            </div>
+            <div class="postContent">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error iste nobis repudiandae est incidunt nemo hic tenetur minima adipisci, quod aut temporibus vitae? Esse deleniti fugiat molestias perferendis, vel aliquid voluptates ipsum consectetur ex vero aliquam animi dolores id eaque eos quasi nisi cumque similique, at ullam explicabo, nostrum aut fuga debitis corrupti. Earum, ullam, dolores!</p>
+            </div>
+        </article>
+        <article class="post">
+            <div class="postHeader">
+                <h4>NASA Getting First Good Look at Pluto</h4>
+            </div>
+            <div class="postContent">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam tempora cum mollitia, amet velit dignissimos reiciendis nisi, corrupti suscipit incidunt qui. Vitae doloremque, odio nam. Illo maiores eos repudiandae, exercitationem eum, reprehenderit quas ea sequi, explicabo nemo distinctio cupiditate sunt consectetur tempore, beatae? Ipsum sint qui quasi laboriosam nam quidem exercitationem tempore a repellat nulla.</p>
+            </div>
+        </article>
+        <article class="post">
+            <div class="postHeader">
+                <h4>NASA Getting First Good Look at Pluto</h4>
+            </div>
+            <div class="postContent">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque non iure veritatis natus, sunt soluta voluptates id, temporibus magnam omnis numquam ipsum aperiam, eius consequatur nulla nesciunt ipsa minima quibusdam. Cupiditate dolor excepturi perspiciatis, laborum accusantium sapiente quos.</p>
+            </div>
+        </article>
+        <article class="post">
+            <div class="postHeader">
+                <h4>NASA Getting First Good Look at Pluto</h4>
+            </div>
+            <div class="postContent">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam tempora cum mollitia, amet velit dignissimos reiciendis nisi, corrupti suscipit incidunt qui. Vitae doloremque, odio nam. Illo maiores eos repudiandae, exercitationem eum, reprehenderit quas ea sequi, explicabo nemo distinctio cupiditate sunt consectetur tempore, beatae? Ipsum sint qui quasi laboriosam nam quidem exercitationem tempore a repellat nulla.</p>
+            </div>
+        </article>
+        <article class="post">
+            <div class="postHeader">
+                <h4>NASA Getting First Good Look at Pluto</h4>
+            </div>
+            <div class="postContent">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aut eum impedit laborum autem dolor optio delectus vel nam maiores possimus, aperiam! Explicabo dolorum impedit doloremque omnis maiores nostrum, eos assumenda harum atque sequi mollitia adipisci molestiae molestias dolores natus delectus, quod fuga accusantium voluptatem, voluptates quos. Nam pariatur, atque, voluptatibus reiciendis mollitia, consequatur eaque praesentium consectetur expedita asperiores fugiat fugit possimus deleniti rem impedit quidem dolorum repellat at nihil obcaecati sequi, earum accusamus repudiandae.</p>
+            </div>
+        </article>
+        <article class="post">
+            <div class="postHeader">
+                <h4>NASA Getting First Good Look at Pluto</h4>
+            </div>
+            <div class="postContent">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam tempora cum mollitia, amet velit dignissimos reiciendis nisi, corrupti suscipit incidunt qui. Vitae doloremque, odio nam. Illo maiores eos repudiandae, exercitationem eum, reprehenderit quas ea sequi, explicabo nemo distinctio cupiditate sunt consectetur tempore, beatae? Ipsum sint qui quasi laboriosam nam quidem exercitationem tempore a repellat nulla.</p>
+            </div>
+        </article>
+    </main>
+</div>
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+<script src="https://rawgit.com/adactio/FitText.js/master/fittext.js"></script>
+<script id="rendered-js">
+    window.fitText(document.getElementById("pageTitle"), 0.71);
+    //# sourceURL=pen.js
+</script>
+</body>
+</html>

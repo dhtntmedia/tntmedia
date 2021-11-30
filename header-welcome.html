@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+    <meta charset="UTF-8">
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+    <title>CodePen - Typing with Typo Correction and Pause</title>
+
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #eee;
+        }
+
+        .typing.animate {
+            width: 21ch;
+            border-right: 0.1em solid black;
+            font-family: monospace;
+            font-size: 2em;
+            animation: type 2.5s steps(20), writer 1s infinite alternate, delete 0.5s steps(5) 2.5s, type2 1s steps(4) 3s forwards, type3 3s steps(22, end) 6s forwards;
+            overflow: hidden;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .typing.animate::before {
+            content: "Hello, I'm Christine";
+            animation: type2 1s steps(4) 3s forwards, type3 3s steps(22, end) 6s forwards;
+        }
+
+        @keyframes type {
+            from {
+                width: 0;
+            }
+            to {
+                width: 21ch;
+            }
+        }
+
+        @keyframes type2 {
+            from {
+                width: 16ch;
+                content: "Hello, I'm Chrissy. "
+            }
+            to {
+                width: 20ch;
+                content: "Hello, I'm Chrissy. "
+            }
+        }
+
+        @keyframes type3 {
+            from {
+                width: 20ch;
+                content: "Hello, I'm Chrissy. Welcome to my Website!"
+            }
+            to {
+                width: 42ch;
+                content: "Hello, I'm Chrissy. Welcome to my Website!"
+            }
+        }
+
+        @keyframes writer {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        @keyframes delete {
+            from {
+                width: 21ch;
+            }
+            to {
+                width: 16ch;
+            }
+        }
+    </style>
+
+    <script>
+        window.console = window.console || function(t) {};
+    </script>
+
+
+
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+
+
+</head>
+
+<body translate="no">
+<div class="typing animate"></div>
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script id="rendered-js">
+    $(document).ready(() => {
+        let typingElement = $('.typing');
+
+        typingElement.on('click', e => {
+            typingElement.removeClass('animate');
+            setTimeout(() => typingElement.addClass('animate'), 1);
+        });
+    });
+    //# sourceURL=pen.js
+</script>
+
+
+
+
+
+
+
+</body></html>
